@@ -24,6 +24,14 @@ source .zshrc
 pyenv install 3.5.2
 ```
 
+## Install Xcode Command Line Tools
+
+If the python build fails becuase of missing libraries install Xcode command line tools and try again.
+
+```
+xcode-select --install
+```
+
 ## Create Virtual Environment in Project Directory
 
 ```
