@@ -26,7 +26,7 @@ pyenv install 3.5.2
 
 ## Install Xcode Command Line Tools
 
-If the python build fails becuase of missing libraries install Xcode command line tools and try again.
+If the python build fails because of missing libraries install Xcode command line tools and try again.
 
 ```
 xcode-select --install
@@ -52,4 +52,4 @@ pip install -r requirements.txt
 
 ## Start Editing
 
-The project assumes that the python working directory is ```(project directory)/projects```. If ```atom``` is used start from the command line in this directory.
+If ```atom``` is used start from the command line in the project directory.

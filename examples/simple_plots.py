@@ -7,7 +7,6 @@ def line_plot():
     pyplot.plot( years, gdp, color = 'green', marker = 'o', linestyle = 'solid')
     pyplot.title("Nominal GDP")
     pyplot.ylabel("Billions of $")
-    pyplot.show()
 
 def bar_chart():
     movies = ["Annie Hall", "Ben-Hur", "Casablanca", "Gandhi", "West Side Story"]
@@ -18,8 +17,6 @@ def bar_chart():
     pyplot.ylabel("# of Academy Awards")
     pyplot.title("My Favorite Movies")
     pyplot.xticks([i + 0.1 for i, _ in enumerate(movies)], movies)
-
-    pyplot.show()
 
 def histogram():
     grades = [83,95,91,87,70,0,85,82,100,67,73,77,0]
@@ -33,11 +30,8 @@ def histogram():
     pyplot.xlabel("Decile")
     pyplot.ylabel("# of Students")
     pyplot.title("Distribution of Exam 1 Grades")
-    pyplot.show()
-
 
 def multiple_line_charts():
-
     variance     = [1,2,4,8,16,32,64,128,256]
     bias_squared = [256,128,64,32,16,8,4,2,1]
     total_error  = [x + y for x, y in zip(variance, bias_squared)]
@@ -54,7 +48,6 @@ def multiple_line_charts():
     pyplot.show()
 
 def scatter_plot():
-
     friends = [ 70, 65, 72, 63, 71, 64, 60, 64, 67]
     minutes = [175, 170, 205, 120, 220, 130, 105, 145, 190]
     labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
@@ -71,7 +64,6 @@ def scatter_plot():
     pyplot.title("Daily Minutes vs. Number of Friends")
     pyplot.xlabel("# of friends")
     pyplot.ylabel("daily minutes spent on the site")
-    pyplot.show()
 
 def scatter_plot_axes(equal_axes=False):
 
@@ -88,9 +80,6 @@ def scatter_plot_axes(equal_axes=False):
     else:
         pyplot.title("Axes Aren't Comparable")
 
-    pyplot.show()
-
 def pie_chart():
     pyplot.pie([0.95, 0.05], labels=["Uses pie charts", "Knows better"])
     pyplot.axis("equal")
-    pyplot.show()

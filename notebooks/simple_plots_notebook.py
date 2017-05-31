@@ -1,11 +1,9 @@
 # %%
+%matplotlib inline
 %reload_ext autoreload
 %autoreload 2
 %aimport sys, os
-local_lib_path = os.getcwd() + '/examples'
-if local_lib_path not in sys.path:
-    sys.path.append(local_lib_path)
-import simple_plots
+import examples.simple_plots as simple_plots
 
 # %%
 simple_plots.line_plot()
@@ -18,3 +16,12 @@ simple_plots.histogram()
 
 # %%
 simple_plots.multiple_line_charts()
+
+# %%
+simple_plots.scatter_plot()
+
+# %%
+simple_plots.scatter_plot_axes()
+
+# %%
+simple_plots.pie_chart()
