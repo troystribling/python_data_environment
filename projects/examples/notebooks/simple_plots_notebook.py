@@ -1,4 +1,4 @@
-%load_ext autoreload
+%reload_ext autoreload
 %autoreload 2
 import sys, os, importlib
 local_lib_path = os.getcwd() + '/examples'
@@ -17,3 +17,12 @@ simple_plots.histogram()
 
 # %%
 simple_plots.multiple_line_charts()
+
+# %%
+simple_plots.scatter_plot()
+
+# %%
+simple_plots.scatter_plot_axes()
+
+# %%
+simple_plots.pie_chart()
