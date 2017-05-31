@@ -1,6 +1,7 @@
+# %%
 %reload_ext autoreload
 %autoreload 2
-import sys, os, importlib
+%aimport sys, os
 local_lib_path = os.getcwd() + '/examples'
 if local_lib_path not in sys.path:
     sys.path.append(local_lib_path)
@@ -17,12 +18,3 @@ simple_plots.histogram()
 
 # %%
 simple_plots.multiple_line_charts()
-
-# %%
-simple_plots.scatter_plot()
-
-# %%
-simple_plots.scatter_plot_axes()
-
-# %%
-simple_plots.pie_chart()
