@@ -7,6 +7,6 @@ import examples.seaborn_plots as seaborn_plots
 
 # %%
 seaborn_plots.line_plots()
-# seaborn_plots.line_plots()
+
 # %%
 seaborn_plots.polar_plot()
