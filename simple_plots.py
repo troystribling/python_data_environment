@@ -44,9 +44,9 @@ def multiple_line_charts():
 
     xs = range(len(variance))
 
-    pyplot.plot(xs, variance,     'g-',  label='variance')    # green solid line
-    pyplot.plot(xs, bias_squared, 'r-.', label='bias^2')      # red dot-dashed line
-    pyplot.plot(xs, total_error,  'b:',  label='total error') # blue dotted line
+    pyplot.plot(xs, variance,     'g-',  label='variance')
+    pyplot.plot(xs, bias_squared, 'r-.', label='bias^2')
+    pyplot.plot(xs, total_error,  'b:',  label='total error')
 
     pyplot.legend(loc=9)
     pyplot.xlabel("model complexity")
