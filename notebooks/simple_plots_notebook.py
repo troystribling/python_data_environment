@@ -2,7 +2,7 @@
 %matplotlib inline
 %reload_ext autoreload
 %autoreload 2
-%aimport sys, os
+
 import examples.simple_plots as simple_plots
 
 # %%
