@@ -9,6 +9,9 @@ a.real
 a.imag = numpy.array([5, 6])
 a
 
+# %% arange
+
+
 # %%
 # dot product
 # scalars
