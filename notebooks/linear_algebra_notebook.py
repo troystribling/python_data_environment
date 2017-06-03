@@ -11,6 +11,8 @@ a
 
 # %% arange, resape and extended slices
 a = numpy.arange(10)
+
+# map array onto array with different dimensions.
 a.reshape((2,5))
 
 # slice array from index 2 to 5
@@ -43,7 +45,6 @@ numpy.dot([2, 3], [4, 5])
 
 # complex numbers
 numpy.dot(2 + 2j, 2 + 3j)
-numpy.dot(2 + 1j, 2 - 1j)
 
 # complex arrays
 numpy.dot([2 + 1j, 3j], [1 + 2j, 3])
@@ -135,3 +136,5 @@ a = [[1, 0],
      [0, 1]]
 b = [1, 2]
 numpy.matmul(a, b)
+
+# %% tensor product
