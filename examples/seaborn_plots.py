@@ -22,17 +22,17 @@ def distribution_plot():
     seaborn.set(style="white", palette="muted", color_codes=True)
     rs = numpy.random.RandomState(10)
 
-    _, axis = pyplot.subplots(2, 2, figsize=(7, 7), sharex=True)
+    _, axes = pyplot.subplots(2, 2, figsize=(7, 7), sharex=True)
     seaborn.despine(left=True)
 
     d = rs.normal(size=100)
 
-    seaborn.distplot(d, kde=False, color="b", ax=axis[0, 0])
-    seaborn.distplot(d, hist=False, rug=True, color="r", ax=axis[0, 1])
-    seaborn.distplot(d, hist=False, color="g", kde_kws={"shade": True}, ax=axis[1, 0])
-    seaborn.distplot(d, color="m", ax=axis[1, 1])
+    seaborn.distplot(d, kde=False, color="b", ax=axes[0, 0])
+    seaborn.distplot(d, hist=False, rug=True, color="r", ax=axes[0, 1])
+    seaborn.distplot(d, hist=False, color="g", kde_kws={"shade": True}, ax=axes[1, 0])
+    seaborn.distplot(d, color="m", ax=axes[1, 1])
 
-    pyplot.setp(axis, yticks=[])
+    pyplot.setp(axes, yticks=[])
     pyplot.tight_layout()
 
 def marginal_distribution_plot():
@@ -56,18 +56,18 @@ def bivariate_kde_plot():
     virginica = iris.query("species == 'virginica'")
 
     # Set up the figure
-    _, axis = pyplot.subplots(figsize=(8, 8))
-    axis.set_aspect("equal")
+    _, axes = pyplot.subplots(figsize=(8, 8))
+    axes.set_aspect("equal")
 
     # Draw the two density plots
-    axis = seaborn.kdeplot(setosa.sepal_width, setosa.sepal_length, cmap="Reds", shade=True, shade_lowest=False)
-    axis = seaborn.kdeplot(virginica.sepal_width, virginica.sepal_length, cmap="Blues", shade=True, shade_lowest=False)
+    axes = seaborn.kdeplot(setosa.sepal_width, setosa.sepal_length, cmap="Reds", shade=True, shade_lowest=False)
+    axes = seaborn.kdeplot(virginica.sepal_width, virginica.sepal_length, cmap="Blues", shade=True, shade_lowest=False)
 
     # Add labels to the plot
     red = seaborn.color_palette("Reds")[-2]
     blue = seaborn.color_palette("Blues")[-2]
-    axis.text(2.5, 8.2, "virginica", size=16, color=blue)
-    axis.text(3.8, 4.5, "setosa", size=16, color=red)
+    axes.text(2.5, 8.2, "virginica", size=16, color=blue)
+    axes.text(3.8, 4.5, "setosa", size=16, color=red)
 
 def multiple_linear_regression_plot():
     seaborn.set(style="ticks", context="talk")
@@ -106,10 +106,10 @@ def correlation_diagonal_matrix_heat_map():
 
     mask = numpy.zeros_like(corr, dtype=numpy.bool)
     mask[numpy.triu_indices_from(mask)] = True
-    _, axis = pyplot.subplots(figsize=(11, 9))
+    _, axes = pyplot.subplots(figsize=(11, 9))
 
     cmap = seaborn.diverging_palette(220, 10, as_cmap=True)
-    seaborn.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, square=True, xticklabels=5, yticklabels=5, linewidths=.5, cbar_kws={"shrink": .5}, ax=axis)
+    seaborn.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, square=True, xticklabels=5, yticklabels=5, linewidths=.5, cbar_kws={"shrink": .5}, ax=axes)
 
 def correlation_matrix_heat_map():
     seaborn.set(context="paper", font="monospace")
@@ -117,7 +117,7 @@ def correlation_matrix_heat_map():
     data_frame = seaborn.load_dataset("brain_networks", header=[0, 1, 2], index_col=0)
     corrmat = data_frame.corr()
 
-    frame, axis = pyplot.subplots(figsize=(12, 9))
+    frame, axes = pyplot.subplots(figsize=(12, 9))
 
     seaborn.heatmap(corrmat, vmax=.8, square=True)
 
@@ -125,8 +125,8 @@ def correlation_matrix_heat_map():
     networks = corrmat.columns.get_level_values("network")
     for i, network in enumerate(networks):
         if i and network != networks[i - 1]:
-            axis.axhline(len(networks) - i, c="w")
-            axis.axvline(i, c="w")
+            axes.axhline(len(networks) - i, c="w")
+            axes.axvline(i, c="w")
 
     frame.tight_layout()
 
@@ -158,7 +158,7 @@ def horizontal_bar_plot():
     seaborn.set(style="whitegrid")
 
     # Initialize the matplotlib figure
-    _, axis = pyplot.subplots(figsize=(6, 15))
+    _, axes = pyplot.subplots(figsize=(6, 15))
 
     # Load the example car crash dataset
     crashes = seaborn.load_dataset("car_crashes").sort_values("total", ascending=False)
@@ -172,8 +172,8 @@ def horizontal_bar_plot():
     seaborn.barplot(x="alcohol", y="abbrev", data=crashes, label="Alcohol-involved", color="b")
 
     # Add a legend and informative axis label
-    axis.legend(ncol=2, loc="lower right", frameon=True)
-    axis.set(xlim=(0, 24), ylabel="", xlabel="Automobile collisions per billion miles")
+    axes.legend(ncol=2, loc="lower right", frameon=True)
+    axes.set(xlim=(0, 24), ylabel="", xlabel="Automobile collisions per billion miles")
     seaborn.despine(left=True, bottom=True)
 
 def residual_plot():

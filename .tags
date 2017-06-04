@@ -18,18 +18,20 @@ b	notebooks/linear_algebra_notebook.py	/^b = [[4, 1],$/;"	v
 b	notebooks/linear_algebra_notebook.py	/^b = numpy.arange(3*4*5*6)[::-1].reshape((5,4,6,3))$/;"	v
 b	notebooks/linear_algebra_notebook.py	/^b = numpy.linspace(-2, 2, 5)$/;"	v
 bar_chart	examples/simple_plots.py	/^def bar_chart():$/;"	f
-binomial_to_normal	examples/hyposthesis_testing.py	/^def binomial_to_normal(p, n):$/;"	f
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
 category_scatter_plot	examples/seaborn_plots.py	/^def category_scatter_plot():$/;"	f
 correlation_diagonal_matrix_heat_map	examples/seaborn_plots.py	/^def correlation_diagonal_matrix_heat_map():$/;"	f
 correlation_matrix_heat_map	examples/seaborn_plots.py	/^def correlation_matrix_heat_map():$/;"	f
 d	notebooks/linear_algebra_notebook.py	/^d = numpy.linspace(-2, 2, 5)$/;"	v
+dist_plot	examples/stats_plots.py	/^def dist_plot(samples):$/;"	f
 distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
+examples	notebooks/normal_distribution_notebook.py	/^import examples.stats_plots as stats_plots$/;"	i
 examples	notebooks/seaborn_plots_notebook.py	/^import examples.seaborn_plots as seaborn_plots$/;"	i
 examples	notebooks/simple_plots_notebook.py	/^import examples.simple_plots as simple_plots$/;"	i
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
 histogram	examples/simple_plots.py	/^def histogram():$/;"	f
+histogram	examples/stats_plots.py	/^def histogram(samples, bins=None):$/;"	f
 horizontal_bar_plot	examples/seaborn_plots.py	/^def horizontal_bar_plot():$/;"	f
 i	notebooks/linear_algebra_notebook.py	/^i = numpy.outer(a, b)$/;"	v
 kendalltau	examples/seaborn_plots.py	/^from scipy.stats import kendalltau$/;"	i
@@ -37,23 +39,23 @@ line_plot	examples/simple_plots.py	/^def line_plot():$/;"	f
 line_plots	examples/seaborn_plots.py	/^def line_plots():$/;"	f
 linera_regression_marginal_distributions_plot	examples/seaborn_plots.py	/^def linera_regression_marginal_distributions_plot():$/;"	f
 marginal_distribution_plot	examples/seaborn_plots.py	/^def marginal_distribution_plot():$/;"	f
-math	examples/hyposthesis_testing.py	/^import math$/;"	i
 matplotlib	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
+matplotlib	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 multiple_line_charts	examples/simple_plots.py	/^def multiple_line_charts():$/;"	f
 multiple_linear_regression_plot	examples/seaborn_plots.py	/^def multiple_linear_regression_plot():$/;"	f
-norm	examples/hyposthesis_testing.py	/^from scipy.stats import norm$/;"	i
-normal_cdf	examples/hyposthesis_testing.py	/^def normal_cdf(x, μ, σ):$/;"	f
-normal_interval	examples/hyposthesis_testing.py	/^def normal_interval(x, y, μ, σ):$/;"	f
-normal_outside_interval	examples/hyposthesis_testing.py	/^def normal_outside_interval(x, y, μ, σ):$/;"	f
-normal_tail	examples/hyposthesis_testing.py	/^def normal_tail(x, μ, σ):$/;"	f
-numpy	examples/hyposthesis_testing.py	/^import numpy$/;"	i
+norm	notebooks/normal_distribution_notebook.py	/^from scipy.stats import norm as norm$/;"	i
+norm_rvs	notebooks/normal_distribution_notebook.py	/^norm_rvs = norm.rvs(size=100)$/;"	v
+normal_fit_plot	examples/stats_plots.py	/^def normal_fit_plot(samples):$/;"	f
 numpy	examples/seaborn_plots.py	/^import numpy$/;"	i
 numpy	notebooks/linear_algebra_notebook.py	/^import numpy$/;"	i
+numpy	notebooks/normal_distribution_notebook.py	/^%aimport numpy$/;"	i
 pandas	examples/seaborn_plots.py	/^import pandas$/;"	i
+pdf_plot	examples/stats_plots.py	/^def pdf_plot(x, y):$/;"	f
 pie_chart	examples/simple_plots.py	/^def pie_chart():$/;"	f
 polar_plot	examples/seaborn_plots.py	/^def polar_plot():$/;"	f
 pyplot	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 pyplot	examples/simple_plots.py	/^from matplotlib import pyplot$/;"	i
+pyplot	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 r	notebooks/linear_algebra_notebook.py	/^r = numpy.outer(a, b)$/;"	v
 residual_plot	examples/seaborn_plots.py	/^def residual_plot():$/;"	f
 scatter_plot	examples/simple_plots.py	/^def scatter_plot():$/;"	f
@@ -61,8 +63,12 @@ scatter_plot_axes	examples/simple_plots.py	/^def scatter_plot_axes(equal_axes=Fa
 scatter_plot_marginal_ticks	examples/seaborn_plots.py	/^def scatter_plot_marginal_ticks():$/;"	f
 scatter_plot_matrix	examples/seaborn_plots.py	/^def scatter_plot_matrix():$/;"	f
 seaborn	examples/seaborn_plots.py	/^import seaborn$/;"	i
+seaborn	examples/stats_plots.py	/^import seaborn$/;"	i
 seaborn_plots	notebooks/seaborn_plots_notebook.py	/^import examples.seaborn_plots as seaborn_plots$/;"	i
 simple_plots	notebooks/simple_plots_notebook.py	/^import examples.simple_plots as simple_plots$/;"	i
+stats	examples/stats_plots.py	/^from scipy import stats$/;"	i
+stats_plots	notebooks/normal_distribution_notebook.py	/^import examples.stats_plots as stats_plots$/;"	i
 time_series_bootstrap_resampling	examples/seaborn_plots.py	/^def time_series_bootstrap_resampling():$/;"	f
 timeseries_plot	examples/seaborn_plots.py	/^def timeseries_plot():$/;"	f
 x	notebooks/linear_algebra_notebook.py	/^x = numpy.array(['a', 'b', 'c'], dtype=object)$/;"	v
+x	notebooks/normal_distribution_notebook.py	/^x = numpy.linspace(norm.ppf(0.01), norm.ppf(0.99), 100)$/;"	v
