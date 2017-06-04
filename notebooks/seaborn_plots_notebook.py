@@ -3,7 +3,7 @@
 %reload_ext autoreload
 %autoreload 2
 
-import examples.seaborn_plots as seaborn_plots
+from examples import seaborn_plots
 
 # %%
 seaborn_plots.line_plots()

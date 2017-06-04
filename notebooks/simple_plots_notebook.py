@@ -3,7 +3,7 @@
 %reload_ext autoreload
 %autoreload 2
 
-import examples.simple_plots as simple_plots
+from examples import simple_plots
 
 # %%
 simple_plots.line_plot()

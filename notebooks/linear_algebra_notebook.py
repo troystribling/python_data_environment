@@ -9,7 +9,8 @@ a.real
 a.imag = numpy.array([5, 6])
 a
 
-# %% arange, resape and extended slices
+# %%
+# arange, resape and extended slices
 a = numpy.arange(10)
 
 # map array onto array with different dimensions.
@@ -36,7 +37,8 @@ numpy.linspace(-2, 2, 5)
 
 numpy.eye(2)
 numpy.identity(2)
-# %% dot product
+# %%
+# dot product
 # scalars
 numpy.dot(2,2)
 
@@ -62,7 +64,8 @@ b = numpy.arange(3*4*5*6)[::-1].reshape((5,4,6,3))
 numpy.dot(a, b)[2,3,2,1,2,2]
 sum(a[2,3,2,:] * b[1,2,:,2])
 
-# %% vdot product (takes complex conjugate of first argument before computing product)
+# %%
+# vdot product (takes complex conjugate of first argument before computing product)
 numpy.vdot([2, 3], [4, 5])
 
 # compare with dot
@@ -80,7 +83,8 @@ b = [[4, 1],
 numpy.vdot(a, b)
 1*4 + 0*1 + 0*2 + 1*2
 
-# %% inner product
+# %%
+# inner product
 numpy.inner([2, 3], [4, 5])
 
 # compare with dot and vdot
@@ -111,7 +115,8 @@ numpy.inner(a, numpy.transpose(b))
 numpy.dot(a, b)
 numpy.vdot(a, b)
 
-# %% outter product
+# %%
+# outter product
 a = numpy.ones((5,))
 b = numpy.linspace(-2, 2, 5)
 r = numpy.outer(a, b)
@@ -125,7 +130,8 @@ r + i
 x = numpy.array(['a', 'b', 'c'], dtype=object)
 numpy.outer([1, 2, 3], x)
 
-# %% matrix multiply
+# %%
+# matrix multiply
 a = [[1, 0],
      [0, 1]]
 b = [[4, 1],
@@ -137,4 +143,5 @@ a = [[1, 0],
 b = [1, 2]
 numpy.matmul(a, b)
 
-# %% tensor product
+# %%
+# tensor product
