@@ -18,6 +18,7 @@ b	notebooks/linear_algebra_notebook.py	/^b = [[4, 1],$/;"	v
 b	notebooks/linear_algebra_notebook.py	/^b = numpy.arange(3*4*5*6)[::-1].reshape((5,4,6,3))$/;"	v
 b	notebooks/linear_algebra_notebook.py	/^b = numpy.linspace(-2, 2, 5)$/;"	v
 bar_chart	examples/simple_plots.py	/^def bar_chart():$/;"	f
+bernoulli_trials	notebooks/fair_coin.py	/^from examples import bernoulli_trials$/;"	i
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
 category_scatter_plot	examples/seaborn_plots.py	/^def category_scatter_plot():$/;"	f
@@ -27,10 +28,9 @@ d	notebooks/linear_algebra_notebook.py	/^d = numpy.linspace(-2, 2, 5)$/;"	v
 dist_plot	examples/stats_plots.py	/^def dist_plot(samples):$/;"	f
 distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
-fair_coin_trails	notebooks/fair_coin.py	/^fair_coin_trails = heads_count_trials(1000, fair_coin, n)$/;"	v
-heads_count	notebooks/fair_coin.py	/^heads_count = heads_count_generate(p, n)$/;"	v
-heads_count_generate	notebooks/fair_coin.py	/^def heads_count_generate(p, n):$/;"	f
-heads_count_trials	notebooks/fair_coin.py	/^def heads_count_trials(nexp, p, n):$/;"	f
+fit_dist_plot	examples/stats_plots.py	/^def fit_dist_plot(samples, stats):$/;"	f
+heads_count_trial	examples/bernoulli_trials.py	/^def heads_count_trial(p, n):$/;"	f
+heads_count_trials	examples/bernoulli_trials.py	/^def heads_count_trials(nexp, p, n):$/;"	f
 histogram	examples/simple_plots.py	/^def histogram():$/;"	f
 histogram	examples/stats_plots.py	/^def histogram(samples, bins=None):$/;"	f
 horizontal_bar_plot	examples/seaborn_plots.py	/^def horizontal_bar_plot():$/;"	f
@@ -45,21 +45,25 @@ matplotlib	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 multiple_line_charts	examples/simple_plots.py	/^def multiple_line_charts():$/;"	f
 multiple_linear_regression_plot	examples/seaborn_plots.py	/^def multiple_linear_regression_plot():$/;"	f
 n	notebooks/fair_coin.py	/^n = 1000$/;"	v
+norm	examples/bernoulli_trials.py	/^from scipy.stats import norm$/;"	i
+norm	notebooks/a_b_test.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/fair_coin.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/normal_distribution_notebook.py	/^from scipy.stats import norm$/;"	i
 norm_rvs	notebooks/normal_distribution_notebook.py	/^norm_rvs = norm.rvs(size=1000)$/;"	v
-normal_fit_plot	examples/stats_plots.py	/^def normal_fit_plot(samples):$/;"	f
+numpy	examples/bernoulli_trials.py	/^import numpy$/;"	i
 numpy	examples/seaborn_plots.py	/^import numpy$/;"	i
+numpy	notebooks/a_b_test.py	/^import numpy$/;"	i
 numpy	notebooks/fair_coin.py	/^import numpy$/;"	i
 numpy	notebooks/linear_algebra_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/normal_distribution_notebook.py	/^%aimport numpy$/;"	i
+p	notebooks/fair_coin.py	/^p = 0.45$/;"	v
 p	notebooks/fair_coin.py	/^p = 0.5$/;"	v
 pandas	examples/seaborn_plots.py	/^import pandas$/;"	i
-params_binomal_to_normal	notebooks/fair_coin.py	/^def params_binomal_to_normal(p, n):$/;"	f
+params_binomal_to_normal	examples/bernoulli_trials.py	/^def params_binomal_to_normal(p, n):$/;"	f
 pdf_plot	examples/stats_plots.py	/^def pdf_plot(x, y):$/;"	f
 pie_chart	examples/simple_plots.py	/^def pie_chart():$/;"	f
 polar_plot	examples/seaborn_plots.py	/^def polar_plot():$/;"	f
-pvalue	notebooks/fair_coin.py	/^def pvalue(observed_heads_count, μ, σ):$/;"	f
+pvalue	examples/bernoulli_trials.py	/^def pvalue(observed_heads_count, μ, σ):$/;"	f
 pyplot	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 pyplot	examples/simple_plots.py	/^from matplotlib import pyplot$/;"	i
 pyplot	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
@@ -78,6 +82,8 @@ stats_plots	notebooks/fair_coin.py	/^from examples import stats_plots$/;"	i
 stats_plots	notebooks/normal_distribution_notebook.py	/^from examples import stats_plots$/;"	i
 time_series_bootstrap_resampling	examples/seaborn_plots.py	/^def time_series_bootstrap_resampling():$/;"	f
 timeseries_plot	examples/seaborn_plots.py	/^def timeseries_plot():$/;"	f
+trails	notebooks/fair_coin.py	/^trails = bernoulli_trials.heads_count_trials(1000, p, n)$/;"	v
+uniform	examples/bernoulli_trials.py	/^from scipy.stats import uniform$/;"	i
 uniform	notebooks/fair_coin.py	/^from scipy.stats import uniform$/;"	i
 x	notebooks/linear_algebra_notebook.py	/^x = numpy.array(['a', 'b', 'c'], dtype=object)$/;"	v
 x	notebooks/normal_distribution_notebook.py	/^x = numpy.linspace(norm.ppf(0.01), norm.ppf(0.99), 100)$/;"	v
