@@ -53,7 +53,6 @@ norm.isf(norm.sf(1.0))
 # from the mean is
 norm.cdf(1.0) - norm.cdf(-1.0)
 norm.sf(-1.0) - norm.sf(1.0)
-norm.cdf(1.0) - norm.cdf(0.0)
 
 # The inverse of the interval probability assuming symetry about the mean is
 norm.interval(0.683)
