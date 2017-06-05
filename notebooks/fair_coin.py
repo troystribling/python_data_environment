@@ -10,32 +10,38 @@ from scipy.stats import uniform
 from examples import stats_plots
 
 # %%
-def binomal_params_to_normal(p, n):
+def params_binomal_to_normal(p, n):
     μ = n * p
     σ = numpy.sqrt(n * p * (1.0 - p))
     return μ, σ
 
 def heads_count_generate(p, n):
-    heads = 0
+    heads_count = 0
     for toss in uniform.rvs(size=n):
         if toss < p:
-            heads += 1
-    return heads
+            heads_count += 1
+    return heads_count
+
+def heads_count_trials(nexp, p, n):
+    heads_count = []
+    for _ in range(nexp):
+        heads_count.append(heads_count_generate(p, n))
+    return heads_count
+
+# The probability that heads_count is at least extreme as what was observed
+def pvalue(observed_heads_count, μ, σ):
+    if observed_heads_count > μ:
+        # exterem values are in tail multiply by 2 for upper and lower ends of distribution
+        return 2 * norm.sf(observed_heads_count, μ, σ)
+    else:
+        # exterem values are less than tail multiply by 2 for upper and lower ends of distribution
+        return 2 * norm.cdf(observed_heads_count, μ, σ)
 
 # %%
 n = 1000
-fair_coin = 0.5
-winning_coin = 0.55
-losing_coin = 0.45
-
-fair_coin_heads_count = heads_count_generate(fair_coin, n)
-winning_coin_heads_count = heads_count_generate(winning_coin, n)
-losing_coin_heads_count = heads_count_generate(losing_coin, n)
-
-fair_coin_μ, fair_coin_σ = binomal_params_to_normal(fair_coin, n)
-winning_coin_μ, winning_coin_σ = binomal_params_to_normal(winning_coin, n)
-losing_coin_μ, losing_coin_σ = binomal_params_to_normal(losing_coin, n)
-
-fair_coin_confidence_interval = norm.interval(0.95, fair_coin_μ, fair_coin_σ)
-winning_coin_confidence_interval = norm.interval(0.95, winning_coin_μ, winning_coin_σ)
-losing_coin_confidence_interval = norm.interval(0.95, losing_coin_μ, losing_coin_σ)
+p = 0.5
+heads_count = heads_count_generate(p, n)
+μ, σ = params_binomal_to_normal(p, n)
+pvalue(529.5, μ, σ)
+trails = heads_count_trials(1000, p, n)
+stats_plots.normal_fit_plot(trails)

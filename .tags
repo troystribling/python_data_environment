@@ -18,7 +18,6 @@ b	notebooks/linear_algebra_notebook.py	/^b = [[4, 1],$/;"	v
 b	notebooks/linear_algebra_notebook.py	/^b = numpy.arange(3*4*5*6)[::-1].reshape((5,4,6,3))$/;"	v
 b	notebooks/linear_algebra_notebook.py	/^b = numpy.linspace(-2, 2, 5)$/;"	v
 bar_chart	examples/simple_plots.py	/^def bar_chart():$/;"	f
-binomal_params_to_normal	notebooks/fair_coin.py	/^def binomal_params_to_normal(p, n):$/;"	f
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
 category_scatter_plot	examples/seaborn_plots.py	/^def category_scatter_plot():$/;"	f
@@ -28,10 +27,10 @@ d	notebooks/linear_algebra_notebook.py	/^d = numpy.linspace(-2, 2, 5)$/;"	v
 dist_plot	examples/stats_plots.py	/^def dist_plot(samples):$/;"	f
 distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
-fair_coin	notebooks/fair_coin.py	/^fair_coin = 0.5$/;"	v
-fair_coin_confidence_interval	notebooks/fair_coin.py	/^fair_coin_confidence_interval = norm.interval(0.95, fair_coin_μ, fair_coin_σ)$/;"	v
-fair_coin_heads_count	notebooks/fair_coin.py	/^fair_coin_heads_count = heads_count_generate(fair_coin, n)$/;"	v
+fair_coin_trails	notebooks/fair_coin.py	/^fair_coin_trails = heads_count_trials(1000, fair_coin, n)$/;"	v
+heads_count	notebooks/fair_coin.py	/^heads_count = heads_count_generate(p, n)$/;"	v
 heads_count_generate	notebooks/fair_coin.py	/^def heads_count_generate(p, n):$/;"	f
+heads_count_trials	notebooks/fair_coin.py	/^def heads_count_trials(nexp, p, n):$/;"	f
 histogram	examples/simple_plots.py	/^def histogram():$/;"	f
 histogram	examples/stats_plots.py	/^def histogram(samples, bins=None):$/;"	f
 horizontal_bar_plot	examples/seaborn_plots.py	/^def horizontal_bar_plot():$/;"	f
@@ -40,9 +39,6 @@ kendalltau	examples/seaborn_plots.py	/^from scipy.stats import kendalltau$/;"	i
 line_plot	examples/simple_plots.py	/^def line_plot():$/;"	f
 line_plots	examples/seaborn_plots.py	/^def line_plots():$/;"	f
 linera_regression_marginal_distributions_plot	examples/seaborn_plots.py	/^def linera_regression_marginal_distributions_plot():$/;"	f
-losing_coin	notebooks/fair_coin.py	/^losing_coin = 0.45$/;"	v
-losing_coin_confidence_interval	notebooks/fair_coin.py	/^losing_coin_confidence_interval = norm.interval(0.95, losing_coin_μ, losing_coin_σ)$/;"	v
-losing_coin_heads_count	notebooks/fair_coin.py	/^losing_coin_heads_count = heads_count_generate(losing_coin, n)$/;"	v
 marginal_distribution_plot	examples/seaborn_plots.py	/^def marginal_distribution_plot():$/;"	f
 matplotlib	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 matplotlib	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
@@ -57,10 +53,13 @@ numpy	examples/seaborn_plots.py	/^import numpy$/;"	i
 numpy	notebooks/fair_coin.py	/^import numpy$/;"	i
 numpy	notebooks/linear_algebra_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/normal_distribution_notebook.py	/^%aimport numpy$/;"	i
+p	notebooks/fair_coin.py	/^p = 0.5$/;"	v
 pandas	examples/seaborn_plots.py	/^import pandas$/;"	i
+params_binomal_to_normal	notebooks/fair_coin.py	/^def params_binomal_to_normal(p, n):$/;"	f
 pdf_plot	examples/stats_plots.py	/^def pdf_plot(x, y):$/;"	f
 pie_chart	examples/simple_plots.py	/^def pie_chart():$/;"	f
 polar_plot	examples/seaborn_plots.py	/^def polar_plot():$/;"	f
+pvalue	notebooks/fair_coin.py	/^def pvalue(observed_heads_count, μ, σ):$/;"	f
 pyplot	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 pyplot	examples/simple_plots.py	/^from matplotlib import pyplot$/;"	i
 pyplot	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
@@ -80,8 +79,5 @@ stats_plots	notebooks/normal_distribution_notebook.py	/^from examples import sta
 time_series_bootstrap_resampling	examples/seaborn_plots.py	/^def time_series_bootstrap_resampling():$/;"	f
 timeseries_plot	examples/seaborn_plots.py	/^def timeseries_plot():$/;"	f
 uniform	notebooks/fair_coin.py	/^from scipy.stats import uniform$/;"	i
-winning_coin	notebooks/fair_coin.py	/^winning_coin = 0.55$/;"	v
-winning_coin_confidence_interval	notebooks/fair_coin.py	/^winning_coin_confidence_interval = norm.interval(0.95, winning_coin_μ, winning_coin_σ)$/;"	v
-winning_coin_heads_count	notebooks/fair_coin.py	/^winning_coin_heads_count = heads_count_generate(winning_coin, n)$/;"	v
 x	notebooks/linear_algebra_notebook.py	/^x = numpy.array(['a', 'b', 'c'], dtype=object)$/;"	v
 x	notebooks/normal_distribution_notebook.py	/^x = numpy.linspace(norm.ppf(0.01), norm.ppf(0.99), 100)$/;"	v
