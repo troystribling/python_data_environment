@@ -15,7 +15,9 @@ n = 1000
 p = 0.5
 μ, σ = bernoulli_trials.params_binomal_to_normal(p, n)
 bernoulli_trials.pvalue(500, μ, σ)
-trails = bernoulli_trials.heads_count_trials(1000, p, n)
+trials = bernoulli_trials.heads_count_trials(1000, p, n)
+outliers = bernoulli_trials.heads_count_trial_outliers(0.95, trials, p, n)
+outlier_probability = len(outliers) / len(trials)
 stats_plots.fit_dist_plot(trails, norm)
 
 # %%

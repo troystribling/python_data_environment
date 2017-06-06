@@ -7,6 +7,10 @@ def params_binomal_to_normal(p, n):
     σ = numpy.sqrt(n * p * (1.0 - p))
     return μ, σ
 
+def params_estimate_normap(heads_count, n):
+    p = heads_count / n
+    σ = numpy.sqrt(p * (1.0 - p))
+
 def heads_count_trial(p, n):
     heads_count = 0
     for toss in uniform.rvs(size=n):
@@ -15,10 +19,12 @@ def heads_count_trial(p, n):
     return heads_count
 
 def heads_count_trials(nexp, p, n):
-    heads_count = []
-    for _ in range(nexp):
-        heads_count.append(heads_count_trial(p, n))
-    return heads_count
+    return [heads_count_trial(p, n) for _ in range(nexp)]
+
+def heads_count_trial_outliers(alpha, trials, p, n):
+    μ, σ = params_binomal_to_normal(p, n)
+    acceptence_interval = norm.interval(alpha, μ, σ)
+    return [trial for trial in trials if trial < acceptence_interval[0] or trial > acceptence_interval[1]]
 
 # The probability that heads_count is at least extreme as what was observed
 def pvalue(observed_heads_count, μ, σ):
