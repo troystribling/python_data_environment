@@ -20,6 +20,9 @@ b	notebooks/linear_algebra_notebook.py	/^b = numpy.linspace(-2, 2, 5)$/;"	v
 bar_chart	examples/simple_plots.py	/^def bar_chart():$/;"	f
 bernoulli_trials	notebooks/a_b_test.py	/^from examples import bernoulli_trials$/;"	i
 bernoulli_trials	notebooks/fair_coin.py	/^from examples import bernoulli_trials$/;"	i
+beta	notebooks/beta_distibution.py	/^from scipy.stats import beta$/;"	i
+beta_cdfs	notebooks/beta_distibution.py	/^beta_cdfs = [beta.cdf(x, 1.5, 2.75), beta.cdf(x, 2.5, 3.75), beta.cdf(x, 0.5, 0.5)]$/;"	v
+beta_pdfs	notebooks/beta_distibution.py	/^beta_pdfs = [beta.pdf(x, 1.5, 2.75), beta.pdf(x, 2.5, 3.75), beta.pdf(x, 0.5, 0.5)]$/;"	v
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
 category_scatter_plot	examples/seaborn_plots.py	/^def category_scatter_plot():$/;"	f
@@ -44,12 +47,13 @@ linera_regression_marginal_distributions_plot	examples/seaborn_plots.py	/^def li
 marginal_distribution_plot	examples/seaborn_plots.py	/^def marginal_distribution_plot():$/;"	f
 matplotlib	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 matplotlib	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
+multi_line_cdf_plot	examples/stats_plots.py	/^def multi_line_cdf_plot(x, ys):$/;"	f
+multi_line_pdf_plot	examples/stats_plots.py	/^def multi_line_pdf_plot(x, ys):$/;"	f
 multiple_line_charts	examples/simple_plots.py	/^def multiple_line_charts():$/;"	f
 multiple_linear_regression_plot	examples/seaborn_plots.py	/^def multiple_linear_regression_plot():$/;"	f
 n	notebooks/fair_coin.py	/^n = 1000$/;"	v
 norm	examples/bernoulli_trials.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/a_b_test.py	/^from scipy.stats import norm$/;"	i
-norm	notebooks/beta_distibution.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/fair_coin.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/normal_distribution_notebook.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/student_t_distribution_notebook.py	/^from scipy.stats import norm$/;"	i
@@ -98,5 +102,6 @@ trails	notebooks/fair_coin.py	/^trails = bernoulli_trials.heads_count_trials(100
 trials	notebooks/fair_coin.py	/^trials = bernoulli_trials.heads_count_trials(1000, p, n)$/;"	v
 uniform	examples/bernoulli_trials.py	/^from scipy.stats import uniform$/;"	i
 uniform	notebooks/fair_coin.py	/^from scipy.stats import uniform$/;"	i
+x	notebooks/beta_distibution.py	/^x = numpy.linspace(0.0, 1.0, 100)$/;"	v
 x	notebooks/linear_algebra_notebook.py	/^x = numpy.array(['a', 'b', 'c'], dtype=object)$/;"	v
 x	notebooks/normal_distribution_notebook.py	/^x = numpy.linspace(norm.ppf(0.01), norm.ppf(0.99), 100)$/;"	v

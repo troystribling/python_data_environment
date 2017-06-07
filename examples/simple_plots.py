@@ -45,7 +45,6 @@ def multiple_line_charts():
     pyplot.legend(loc=9)
     pyplot.xlabel("model complexity")
     pyplot.title("The Bias-Variance Tradeoff")
-    pyplot.show()
 
 def scatter_plot():
     friends = [ 70, 65, 72, 63, 71, 64, 60, 64, 67]

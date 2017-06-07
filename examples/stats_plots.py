@@ -3,8 +3,21 @@ from scipy import stats
 import seaborn
 
 def pdf_plot(x, y):
+    seaborn.set(color_codes=True)
     pyplot.plot(x, y, linestyle = 'solid')
-    pyplot.ylabel("Probability")
+    pyplot.ylabel("PDF")
+
+def multi_line_pdf_plot(x, ys):
+    seaborn.set(color_codes=True)
+    for i in range(len(ys)):
+        pyplot.plot(x, ys[i])
+    pyplot.ylabel("PDF")
+
+def multi_line_cdf_plot(x, ys):
+    seaborn.set(color_codes=True)
+    for i in range(len(ys)):
+        pyplot.plot(x, ys[i])
+    pyplot.ylabel("CDF")
 
 def dist_plot(samples):
     seaborn.set(color_codes=True)

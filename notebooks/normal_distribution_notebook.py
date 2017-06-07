@@ -11,10 +11,10 @@ from examples import stats_plots
 
 # %%
 # cdf is the cumlative distribution function
-# For standard nomal distribution the cdf approached 1 as x ⇢ ∞
+# For standard nomal distribution the cdf approaches 1 as x ⇢ ∞
 norm.cdf(1000.0)
 
-# For the standard normal distribution the cdf approached 0 as x ⇢ -∞
+# For the standard normal distribution the cdf approaches 0 as x ⇢ -∞
 norm.cdf(-1000.0)
 
 # For the standard normal distribution the cdf of the mean is 0.5
