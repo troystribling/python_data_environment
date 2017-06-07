@@ -30,15 +30,14 @@ beta.cdf(0.0, 2.25, 1.8)
 beta.cdf(0.0, 2.75, 3.83)
 
 # %%
-# ppf is percentile point function which returns the
-# value of the distribution at the specified percentile, the
+# ppf is percentile point function which returns the value of the distribution at the specified percentile the
 # inverse of the cdf
 beta.ppf(0.5, 0.5, 1.75)
 
-
 # %%
 x = numpy.linspace(0.0, 1.0, 100)
-beta_pdfs = [beta.pdf(x, 1.5, 2.75), beta.pdf(x, 2.5, 3.75), beta.pdf(x, 0.5, 0.5)]
+beta_pdfs = [beta.pdf(x, 0.5, 0.5), beta.pdf(x, 1.5, 2.75), beta.pdf(x, 2.5, 3.75), beta.pdf(x, 1.0, 1.0),
+             beta.pdf(x, 10.0, 10.0)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%

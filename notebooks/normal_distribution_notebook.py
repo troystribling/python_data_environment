@@ -23,15 +23,14 @@ norm.cdf(0.0)
 # For the standard normal distribution the cdf 1 standard deviation positive of the mean is
 norm.cdf(1.0)
 
-# The tail probability, survival function for the standard normal distribution 1 standard
+# The tail probability or survival function for the standard normal distribution 1 standard
 # deviation positive of the mean is given by
 1.0 - norm.cdf(1.0)
 norm.sf(1.0)
 
 # %%
-# ppf is percentile point function which returns the
-# value of the distribution at the specified percentile, the
-# inverse of the cdf
+# ppf is percentile point function which returns the value of the distribution at the
+# specified percentile the inverse of the cdf
 
 # percentile for mean of standard normal distribution
 norm.ppf(0.5)
