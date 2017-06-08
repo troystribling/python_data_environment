@@ -7,9 +7,10 @@ def params_binomal_to_normal(p, n):
     σ = numpy.sqrt(n * p * (1.0 - p))
     return μ, σ
 
-def params_estimate_success_probability(success_count, n):
+def params_estimate_probability(success_count, n):
     p = success_count / n
     σ = numpy.sqrt(p * (1.0 - p) / n)
+    return p, σ
 
 def success_count_trial(p, n):
     success_count = 0
