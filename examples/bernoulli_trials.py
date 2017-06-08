@@ -30,8 +30,8 @@ def success_count_trial_outliers(alpha, trials, p, n):
 # The probability that success_count is at least extreme as what was observed
 def pvalue(observed_success_count, μ, σ):
     if observed_success_count > μ:
-        # exterem values are in tail multiply by 2 for upper and lower ends of distribution
+        # extereme values are in tail multiply by 2 for upper and lower ends of distribution
         return 2 * norm.sf(observed_success_count, μ, σ)
     else:
-        # exterem values are less than tail multiply by 2 for upper and lower ends of distribution
+        # extereme values are less than tail multiply by 2 for upper and lower ends of distribution
         return 2 * norm.cdf(observed_success_count, μ, σ)

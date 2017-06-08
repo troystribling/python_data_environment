@@ -10,9 +10,10 @@ from examples import stats_plots
 from examples import bernoulli_trials
 
 # %%
-# A/B trial test statistic is derived from the the difference of the trail probability estimate
+# A/B trial test statistic is derived from the the difference of the trial probability estimate
 # s = (μa - μb)/sqrt(σa**2 + σb**2) which is assumed to be normally distributed with mean 0 and
-# varaince 1.
+# varaince 1 as a consequence of the bernoulli trial having a binomial distribution which is approximately
+# normal for large n
 def a_b_test_statistic(μa, σa, μb, σb):
     return (μa - μb)/numpy.sqrt(σa**2 + σb**2)
 
@@ -31,7 +32,7 @@ test_stat = a_b_test_statistic(μa, σa, μb, σb)
 bernoulli_trials.pvalue(test_stat, 0.0, 1.0)
 
 # %%
-# Run an A/B test with pa > pb
+# Run an A/B test with pa < pb
 pa = 0.45
 pb = 0.5
 na = 1000
