@@ -38,8 +38,7 @@ beta.ppf(0.5, 1.0, 1.0)
 
 # %%
 x = numpy.linspace(0.0, 1.0, 100)
-beta_pdfs = [beta.pdf(x, 1.0, 1.0), beta.pdf(x, 1.5, 2.75), beta.pdf(x, 8.5, 3.75),
-             beta.pdf(x, 10.0, 10.0)]
+beta_pdfs = [beta.pdf(x, 1.0, 1.0), beta.pdf(x, 1.5, 2.75), beta.pdf(x, 8.5, 3.75), beta.pdf(x, 10.0, 10.0)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
