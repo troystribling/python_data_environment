@@ -21,9 +21,11 @@ b	notebooks/linear_algebra_notebook.py	/^b = numpy.linspace(-2, 2, 5)$/;"	v
 bar_chart	examples/simple_plots.py	/^def bar_chart():$/;"	f
 bernoulli_trials	notebooks/a_b_test_notebook.py	/^from examples import bernoulli_trials$/;"	i
 bernoulli_trials	notebooks/bernoulli_trail_notebook.py	/^from examples import bernoulli_trials$/;"	i
+bernoulli_trials	notebooks/beta_distibution_notebook.py	/^from examples import bernoulli_trials$/;"	i
 beta	notebooks/beta_distibution_notebook.py	/^from scipy.stats import beta$/;"	i
-beta_cdfs	notebooks/beta_distibution_notebook.py	/^beta_cdfs = [beta.cdf(x, 1.5, 2.75), beta.cdf(x, 2.5, 3.75), beta.cdf(x, 0.5, 0.5)]$/;"	v
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.5, 0.5), beta.pdf(x, 1.5, 2.75), beta.pdf(x, 2.5, 3.75), beta.pdf(x, 1.0, 1.0),$/;"	v
+beta_cdfs	notebooks/beta_distibution_notebook.py	/^beta_cdfs = [beta.cdf(x, 1.0, 1.0), beta.cdf(x, 1.5, 2.75), beta.cdf(x, 8.5, 3.75),$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 1.0, 1.0), beta.pdf(x, 1.5, 2.75), beta.pdf(x, 8.5, 3.75),$/;"	v
+beta_posterior	notebooks/beta_distibution_notebook.py	/^def beta_posterior(success_count, n, x, α, β):$/;"	f
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
 category_scatter_plot	examples/seaborn_plots.py	/^def category_scatter_plot():$/;"	f
@@ -59,6 +61,7 @@ norm	notebooks/a_b_test_notebook.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/bernoulli_trail_notebook.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/normal_distribution_notebook.py	/^from scipy.stats import norm$/;"	i
 norm_rvs	notebooks/normal_distribution_notebook.py	/^norm_rvs = norm.rvs(size=1000)$/;"	v
+ns	notebooks/beta_distibution_notebook.py	/^ns = [10, 100, 1000, 10000]$/;"	v
 numpy	examples/bernoulli_trials.py	/^import numpy$/;"	i
 numpy	examples/seaborn_plots.py	/^import numpy$/;"	i
 numpy	notebooks/a_b_test_notebook.py	/^import numpy$/;"	i
@@ -70,6 +73,8 @@ outlier_probability	notebooks/bernoulli_trail_notebook.py	/^outlier_probability 
 outliers	notebooks/bernoulli_trail_notebook.py	/^outliers = bernoulli_trials.success_count_trial_outliers(0.95, trials, p, n)$/;"	v
 p	notebooks/bernoulli_trail_notebook.py	/^p = 0.45$/;"	v
 p	notebooks/bernoulli_trail_notebook.py	/^p = 0.5$/;"	v
+p	notebooks/beta_distibution_notebook.py	/^p = 0.35$/;"	v
+p	notebooks/beta_distibution_notebook.py	/^p = 0.5$/;"	v
 pa	notebooks/a_b_test_notebook.py	/^pa = 0.45$/;"	v
 pandas	examples/seaborn_plots.py	/^import pandas$/;"	i
 params_binomal_to_normal	examples/bernoulli_trials.py	/^def params_binomal_to_normal(p, n):$/;"	f
@@ -78,6 +83,7 @@ pb	notebooks/a_b_test_notebook.py	/^pb = 0.5$/;"	v
 pdf_plot	examples/stats_plots.py	/^def pdf_plot(x, y):$/;"	f
 pie_chart	examples/simple_plots.py	/^def pie_chart():$/;"	f
 polar_plot	examples/seaborn_plots.py	/^def polar_plot():$/;"	f
+posterior_distributions	notebooks/beta_distibution_notebook.py	/^posterior_distributions = [beta_posterior(success_counts[i], ns[i], x, 1.0, 1.0) for i in range(len(ns))]$/;"	v
 pvalue	examples/bernoulli_trials.py	/^def pvalue(observed_success_count, μ, σ):$/;"	f
 pyplot	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 pyplot	examples/simple_plots.py	/^from matplotlib import pyplot$/;"	i
@@ -102,6 +108,7 @@ success_count_trial_a	notebooks/a_b_test_notebook.py	/^success_count_trial_a = b
 success_count_trial_b	notebooks/a_b_test_notebook.py	/^success_count_trial_b = bernoulli_trials.success_count_trial(pb, nb)$/;"	v
 success_count_trial_outliers	examples/bernoulli_trials.py	/^def success_count_trial_outliers(alpha, trials, p, n):$/;"	f
 success_count_trials	examples/bernoulli_trials.py	/^def success_count_trials(nexp, p, n):$/;"	f
+success_counts	notebooks/beta_distibution_notebook.py	/^success_counts = [bernoulli_trials.success_count_trial(p, n) for n in ns]$/;"	v
 test_stat	notebooks/a_b_test_notebook.py	/^test_stat = a_b_test_statistic(μa, σa, μb, σb)$/;"	v
 time_series_bootstrap_resampling	examples/seaborn_plots.py	/^def time_series_bootstrap_resampling():$/;"	f
 timeseries_plot	examples/seaborn_plots.py	/^def timeseries_plot():$/;"	f
