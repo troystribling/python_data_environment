@@ -43,6 +43,20 @@ stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
 x = numpy.linspace(0.0, 1.0, 100)
+beta_pdfs = [beta.pdf(x, 0.1, 0.1), beta.pdf(x, 0.5, 0.5), beta.pdf(x, 0.75, 0.75), beta.pdf(x, 0.9, 0.9)]
+stats_plots.multi_line_pdf_plot(x, beta_pdfs)
+
+# %%
+x = numpy.linspace(0.0, 1.0, 100)
+beta_pdfs = [beta.pdf(x, 0.1, 0.001), beta.pdf(x, 0.25, 0.75), beta.pdf(x, 0.5, 0.75)]
+stats_plots.multi_line_pdf_plot(x, beta_pdfs)
+# %%
+x = numpy.linspace(0.0, 1.0, 100)
+beta_pdfs = [beta.pdf(x, 1.0, 3.0), beta.pdf(x, 3.0, 1.0)]
+stats_plots.multi_line_pdf_plot(x, beta_pdfs)
+
+# %%
+x = numpy.linspace(0.0, 1.0, 100)
 beta_cdfs = [beta.cdf(x, 1.0, 1.0), beta.cdf(x, 1.5, 2.75), beta.cdf(x, 8.5, 3.75),
              beta.cdf(x, 10.0, 10.0)]
 stats_plots.multi_line_pdf_plot(x, beta_cdfs)
