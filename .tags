@@ -23,8 +23,21 @@ bernoulli_trials	notebooks/a_b_test_notebook.py	/^from examples import bernoulli
 bernoulli_trials	notebooks/bernoulli_trail_notebook.py	/^from examples import bernoulli_trials$/;"	i
 bernoulli_trials	notebooks/beta_distibution_notebook.py	/^from examples import bernoulli_trials$/;"	i
 beta	notebooks/beta_distibution_notebook.py	/^from scipy.stats import beta$/;"	i
+beta_	notebooks/beta_distibution_notebook.py	/^def beta_μ(α, β):$/;"	f
+beta_	notebooks/beta_distibution_notebook.py	/^def beta_σ(α, β):$/;"	f
 beta_cdfs	notebooks/beta_distibution_notebook.py	/^beta_cdfs = [beta.cdf(x, 1.0, 1.0), beta.cdf(x, 1.5, 2.75), beta.cdf(x, 8.5, 3.75),$/;"	v
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 1.0, 1.0), beta.pdf(x, 1.5, 2.75), beta.pdf(x, 8.5, 3.75),$/;"	v
+beta_mode	notebooks/beta_distibution_notebook.py	/^def beta_mode(α, β):$/;"	f
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.05, 0.05), beta.pdf(x, 0.1, 0.1), beta.pdf(x, 0.5, 0.5)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.5, 0.1), beta.pdf(x, 0.5, 0.5), beta.pdf(x, 0.5, 0.9)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.5, 1.0), beta.pdf(x, 0.5, 1.25), beta.pdf(x, 0.5, 1.45)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.5, 5.0), beta.pdf(x, 0.5, 10.0), beta.pdf(x, 0.5, 20.0)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 1.5, 0.1), beta.pdf(x, 1.5, 0.25), beta.pdf(x, 1.5, 0.45)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 1.5, 5.0), beta.pdf(x, 1.5, 20.0), beta.pdf(x, 1.5, 50.0)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 5.5, 5.5), beta.pdf(x, 10.5, 5.5)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 10.0, 0.5), beta.pdf(x, 20.0, 0.5)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 20.0, 0.5), beta.pdf(x, 50.0, 0.5)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 1.5), beta.pdf(x, 20.0, 1.5), beta.pdf(x, 50.0, 1.5)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 5.0), beta.pdf(x, 20.0, 20.0), beta.pdf(x, 50.0, 50.0)]$/;"	v
 beta_posterior	notebooks/beta_distibution_notebook.py	/^def beta_posterior(success_count, n, x, α, β):$/;"	f
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
@@ -117,5 +130,6 @@ trials	notebooks/bernoulli_trail_notebook.py	/^trials = bernoulli_trials.success
 uniform	examples/bernoulli_trials.py	/^from scipy.stats import uniform$/;"	i
 uniform	notebooks/bernoulli_trail_notebook.py	/^from scipy.stats import uniform$/;"	i
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 100)$/;"	v
+x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 1000)$/;"	v
 x	notebooks/linear_algebra_notebook.py	/^x = numpy.array(['a', 'b', 'c'], dtype=object)$/;"	v
 x	notebooks/normal_distribution_notebook.py	/^x = numpy.linspace(norm.ppf(0.01), norm.ppf(0.99), 100)$/;"	v
