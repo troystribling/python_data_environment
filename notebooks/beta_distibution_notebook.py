@@ -14,9 +14,9 @@ from examples import bernoulli_trials
 # and the exponents for polynomials are not required to be integers. It is also only defined for 0 <= p <= 1 Where
 # p the equivalent of the probability in the binomial distribution.
 #   Β(α,β) = Γ(α)Γ(β)/Γ(α+β)
-#   Beta(p,α,β) = [x^(α-1)][1-x]^(β-1)/Β(α,β)
-# is the equivalent of
-#   Binomial(p, n, m) = [(x^m)(1 - x)^(n-m)]n!/(n-m)!m!
+#   Beta(p,α,β) = p^(α-1)(1-p)^(β-1)/Β(α,β)
+# is related to
+#   Binomial(p, n, m) = [(p^m)(1-p)^(n-m)]n!/(n-m)!m!
 
 # %%
 # The beta distribution is the conjugate prior of the binomial distribution for
@@ -68,10 +68,16 @@ stats_plots.pdf_plot(x, beta.pdf(x, 1.0, 1.0))
 # %%
 # For α > 1 and β > 1 the Beta distribution has a maximum mode for 0 < x < 1
 beta_mode(2.0, 4.0)
-beta_mode(5.5, 5.5)
-beta_mode(10.5, 5.5)
+beta_mode(4.0, 4.0)
+beta_mode(8.0, 4.0)
 x = numpy.linspace(0.0, 1.0, 100)
-beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 5.5, 5.5), beta.pdf(x, 10.5, 5.5)]
+beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 4.0, 4.0), beta.pdf(x, 8.0, 4.0)]
+stats_plots.multi_line_pdf_plot(x, beta_pdfs)
+
+# %%
+# For α >> 1 and β >> 1 σ^2 → 0. Th distribution becomes sharpley peaked.
+x = numpy.linspace(0.0, 1.0, 100)
+beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 40.0, 80.0), beta.pdf(x, 400.0, 800.0)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
@@ -87,13 +93,13 @@ beta_pdfs = [beta.pdf(x, 0.5, 1.0), beta.pdf(x, 0.5, 1.25), beta.pdf(x, 0.5, 1.4
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α < 1 and β > 2 exterma exists for 0 < x < 1. The maximum will be at and end point.
+# For  α < 1 and β > 2 no exterma exists for 0 < x < 1. The maximum will be at and end point.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 0.5, 5.0), beta.pdf(x, 0.5, 10.0), beta.pdf(x, 0.5, 20.0)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α > 1 and β < 1 exterma exists for 0 < x < 1. The maximum will be at and end point.
+# For  α > 1 and β < 1 no exterma exists for 0 < x < 1. The maximum will be at and end point.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 10.0, 0.5), beta.pdf(x, 20.0, 0.5)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
@@ -126,10 +132,7 @@ beta_pdfs = [beta.pdf(x, 1.5, 5.0), beta.pdf(x, 1.5, 20.0), beta.pdf(x, 1.5, 50.
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α >> β and β > 1 the mode approaches 1
-beta_mode(5.0, 0.5)
-beta_mode(20.0, 0.5)
-beta_mode(50.0, 0.5)
+# For  α >> β and β < 1 no exterma exists for 0 < x < 1. The maximum will be at and end point.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 20.0, 0.5), beta.pdf(x, 50.0, 0.5)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
