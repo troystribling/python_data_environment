@@ -99,6 +99,21 @@ beta_pdfs = [beta.pdf(x, 1.5, 5.0), beta.pdf(x, 1.5, 20.0), beta.pdf(x, 1.5, 50.
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
+# For  α = β and α, β > 1 the distribution is symetric about the mode and becomes sharper as α increases.
+beta_mode(5.0, 5.0)
+beta_mode(20.0, 20.0)
+beta_mode(50.0, 50.0)
+beta_μ(5.0, 5.0)
+beta_μ(20.0, 20.0)
+beta_μ(50.0, 50.0)
+beta_σ(5.0, 5.0)
+beta_σ(20.0, 20.0)
+beta_σ(50.0, 50.0)
+x = numpy.linspace(0.0, 1.0, 1000)
+beta_pdfs = [beta.pdf(x, 5.0, 5.0), beta.pdf(x, 20.0, 20.0), beta.pdf(x, 50.0, 50.0)]
+stats_plots.multi_line_pdf_plot(x, beta_pdfs)
+
+# %%
 # For  1 < α < 2 and 0 < β < 2 - α no exterma exists for 0 < x < 1. The maximum will be at and end point.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 1.5, 0.1), beta.pdf(x, 1.5, 0.25), beta.pdf(x, 1.5, 0.45)]
@@ -136,21 +151,6 @@ stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 # For  α >> β and β < 1 no exterma exists for 0 < x < 1. The maximum will be at and end point.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 20.0, 0.5), beta.pdf(x, 50.0, 0.5)]
-stats_plots.multi_line_pdf_plot(x, beta_pdfs)
-
-# %%
-# For  α = β and α, β > 1 the distribution is symetric about the mode and becomes sharper as α increases.
-beta_mode(5.0, 5.0)
-beta_mode(20.0, 20.0)
-beta_mode(50.0, 50.0)
-beta_μ(5.0, 5.0)
-beta_μ(20.0, 20.0)
-beta_μ(50.0, 50.0)
-beta_σ(5.0, 5.0)
-beta_σ(20.0, 20.0)
-beta_σ(50.0, 50.0)
-x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 5.0, 5.0), beta.pdf(x, 20.0, 20.0), beta.pdf(x, 50.0, 50.0)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
