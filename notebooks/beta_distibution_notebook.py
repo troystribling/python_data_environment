@@ -81,6 +81,24 @@ beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 40.0, 80.0), beta.pdf(x, 400.0, 
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
+# For  α >> β and β > 1 the mode approaches 1
+beta_mode(5.0, 1.5),
+beta_mode(20.0, 1.5)
+beta_mode(50.0, 1.5)
+x = numpy.linspace(0.0, 1.0, 1000)
+beta_pdfs = [beta.pdf(x, 5.0, 1.5), beta.pdf(x, 20.0, 1.5), beta.pdf(x, 50.0, 1.5)]
+stats_plots.multi_line_pdf_plot(x, beta_pdfs)
+
+# %%
+# For  β >> α and α > 1 the mode approaches 0
+beta_mode(1.5, 5.0)
+beta_mode(1.5, 20.0)
+beta_mode(1.5, 50.0)
+x = numpy.linspace(0.0, 1.0, 1000)
+beta_pdfs = [beta.pdf(x, 1.5, 5.0), beta.pdf(x, 1.5, 20.0), beta.pdf(x, 1.5, 50.0)]
+stats_plots.multi_line_pdf_plot(x, beta_pdfs)
+
+# %%
 # For  1 < α < 2 and 0 < β < 2 - α no exterma exists for 0 < x < 1. The maximum will be at and end point.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 1.5, 0.1), beta.pdf(x, 1.5, 0.25), beta.pdf(x, 1.5, 0.45)]
@@ -113,23 +131,6 @@ x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 0.5, 0.1), beta.pdf(x, 0.5, 0.5), beta.pdf(x, 0.5, 0.9)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
-# %%
-# For  α >> β and β > 1 the mode approaches 1
-beta_mode(5.0, 1.5),
-beta_mode(20.0, 1.5)
-beta_mode(50.0, 1.5)
-x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 5.0, 1.5), beta.pdf(x, 20.0, 1.5), beta.pdf(x, 50.0, 1.5)]
-stats_plots.multi_line_pdf_plot(x, beta_pdfs)
-
-# %%
-# For  β >> α and α > 1 the mode approaches 0
-beta_mode(1.5, 5.0)
-beta_mode(1.5, 20.0)
-beta_mode(1.5, 50.0)
-x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 1.5, 5.0), beta.pdf(x, 1.5, 20.0), beta.pdf(x, 1.5, 50.0)]
-stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
 # For  α >> β and β < 1 no exterma exists for 0 < x < 1. The maximum will be at and end point.
