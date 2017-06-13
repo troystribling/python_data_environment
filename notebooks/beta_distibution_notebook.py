@@ -75,13 +75,13 @@ beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 4.0, 4.0), beta.pdf(x, 8.0, 4.0)
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For α >> 1 and β >> 1 σ^2 → 0. Th distribution becomes sharpley peaked.
+# For α >> 1 and β >> 1 σ^2 → 0. The distribution becomes sharpley peaked.
 x = numpy.linspace(0.0, 1.0, 100)
 beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 40.0, 80.0), beta.pdf(x, 400.0, 800.0)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α >> β and β > 1 the mode approaches 1
+# For  α >> β and β > 1 the mode approaches 1 and σ^2 → 0. The distribution becomes sharpley peaked.
 beta_mode(5.0, 1.5),
 beta_mode(20.0, 1.5)
 beta_mode(50.0, 1.5)
@@ -90,7 +90,7 @@ beta_pdfs = [beta.pdf(x, 5.0, 1.5), beta.pdf(x, 20.0, 1.5), beta.pdf(x, 50.0, 1.
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  β >> α and α > 1 the mode approaches 0
+# For  β >> α and α > 1 the mode approaches 0 and σ^2 → 0. The distribution becomes sharpley peaked.
 beta_mode(1.5, 5.0)
 beta_mode(1.5, 20.0)
 beta_mode(1.5, 50.0)
@@ -114,31 +114,31 @@ beta_pdfs = [beta.pdf(x, 5.0, 5.0), beta.pdf(x, 20.0, 20.0), beta.pdf(x, 50.0, 5
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  1 < α < 2 and 0 < β < 2 - α no exterma exists for 0 < x < 1. The maximum will be at and end point.
+# For  1 < α < 2 and 0 < β < 2 - α no exterma exists for 0 < x < 1. The distribution is singular at x = 1.0.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 1.5, 0.1), beta.pdf(x, 1.5, 0.25), beta.pdf(x, 1.5, 0.45)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α < 1 and 1 < β < 2 - α no exterma exists for 0 < x < 1. The maximum will be at and end point.
+# For  α < 1 and 1 < β < 2 - α no exterma exists for 0 < x < 1. The distribution is singular at x = 0.0.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 0.5, 1.0), beta.pdf(x, 0.5, 1.25), beta.pdf(x, 0.5, 1.45)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α < 1 and β > 2 no exterma exists for 0 < x < 1. The maximum will be at and end point.
+# For  α < 1 and β > 2 no exterma exists for 0 < x < 1. The distribution is singular at x = 0.0.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 0.5, 5.0), beta.pdf(x, 0.5, 10.0), beta.pdf(x, 0.5, 20.0)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α > 1 and β < 1 no exterma exists for 0 < x < 1. The maximum will be at and end point.
+# For  α > 1 and β < 1 no exterma exists for 0 < x < 1. The distribution is singular at x = 1.0.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 10.0, 0.5), beta.pdf(x, 20.0, 0.5)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α < 1 and β < 1 the mode is a minimm or antimode
+# For  α < 1 and β < 1 the mode is a minimm or antimode. The distribution is singular at x = 1.0 and x = 0.0.
 beta_mode(0.5, 0.1)
 beta_mode(0.5, 0.5)
 beta_mode(0.5, 0.9)
@@ -148,13 +148,13 @@ stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 
 # %%
-# For  α >> β and β < 1 no exterma exists for 0 < x < 1. The maximum will be at and end point.
+# For  α >> β and β < 1 no exterma exists for 0 < x < 1. The distribution is singular at x = 1.0.
 x = numpy.linspace(0.0, 1.0, 1000)
 beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 20.0, 0.5), beta.pdf(x, 50.0, 0.5)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α = β and α, β < 1 the mode approaches 1
+# For  α = β and α, β < 1 the mode approaches 1. The distribution is singular at x = 1.0 and x = 0.0.
 beta_mode(0.05, 0.05)
 beta_mode(0.1, 0.1)
 beta_mode(0.5, 0.5)
@@ -171,7 +171,7 @@ stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 # %%
 # Example CDFs
 x = numpy.linspace(0.0, 1.0, 100)
-beta_cdfs = [beta.cdf(x, 1.0, 1.0), beta.cdf(x, 1.5, 2.75), beta.cdf(x, 8.5, 3.75),
+beta_cdfs = [beta.cdf(x, 0.5, 0.5), beta.cdf(x, 1.0, 1.0), beta.cdf(x, 2.0, 2.0), beta.cdf(x, 8.0, 8.0),
              beta.cdf(x, 10.0, 10.0)]
 stats_plots.multi_line_pdf_plot(x, beta_cdfs)
 

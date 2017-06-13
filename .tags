@@ -25,7 +25,7 @@ bernoulli_trials	notebooks/beta_distibution_notebook.py	/^from examples import b
 beta	notebooks/beta_distibution_notebook.py	/^from scipy.stats import beta$/;"	i
 beta_	notebooks/beta_distibution_notebook.py	/^def beta_μ(α, β):$/;"	f
 beta_	notebooks/beta_distibution_notebook.py	/^def beta_σ(α, β):$/;"	f
-beta_cdfs	notebooks/beta_distibution_notebook.py	/^beta_cdfs = [beta.cdf(x, 1.0, 1.0), beta.cdf(x, 1.5, 2.75), beta.cdf(x, 8.5, 3.75),$/;"	v
+beta_cdfs	notebooks/beta_distibution_notebook.py	/^beta_cdfs = [beta.cdf(x, 0.5, 0.5), beta.cdf(x, 1.0, 1.0), beta.cdf(x, 2.0, 2.0), beta.cdf(x, 8.0, 8.0),$/;"	v
 beta_mode	notebooks/beta_distibution_notebook.py	/^def beta_mode(α, β):$/;"	f
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.05, 0.05), beta.pdf(x, 0.1, 0.1), beta.pdf(x, 0.5, 0.5)]$/;"	v
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.5, 0.1), beta.pdf(x, 0.5, 0.5), beta.pdf(x, 0.5, 0.9)]$/;"	v
