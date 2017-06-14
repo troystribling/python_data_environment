@@ -37,3 +37,9 @@ def fit_dist_plot(samples, stats):
     axes = seaborn.distplot(samples, fit=stats)
     (μ, σ) = stats.fit(samples)
     axes.text(0.75, 0.9, "μ=%d, σ=%d"%(μ, σ), transform=axes.transAxes)
+
+def time_series_plot(x, y):
+    seaborn.set(color_codes=True)
+    pyplot.plot(x, y, linestyle = 'solid')
+    pyplot.ylabel("Amplitude")
+    pyplot.xlabel("Time")

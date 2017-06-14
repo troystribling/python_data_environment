@@ -81,7 +81,7 @@ beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 40.0, 80.0), beta.pdf(x, 400.0, 
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α >> β and β > 1 the mode approaches 1 and σ^2 → 0. The distribution becomes sharpley peaked.
+# For  α ≫ β and β > 1 the mode approaches 1 and σ^2 → 0. The distribution becomes sharpley peaked.
 beta_mode(5.0, 1.5),
 beta_mode(20.0, 1.5)
 beta_mode(50.0, 1.5)
@@ -90,7 +90,7 @@ beta_pdfs = [beta.pdf(x, 5.0, 1.5), beta.pdf(x, 20.0, 1.5), beta.pdf(x, 50.0, 1.
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  β >> α and α > 1 the mode approaches 0 and σ^2 → 0. The distribution becomes sharpley peaked.
+# For  β ≫ α and α > 1 the mode approaches 0 and σ^2 → 0. The distribution becomes sharpley peaked.
 beta_mode(1.5, 5.0)
 beta_mode(1.5, 20.0)
 beta_mode(1.5, 50.0)
@@ -99,7 +99,7 @@ beta_pdfs = [beta.pdf(x, 1.5, 5.0), beta.pdf(x, 1.5, 20.0), beta.pdf(x, 1.5, 50.
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α = β and α, β > 1 the distribution is symetric about the mode and becomes sharper as α increases.
+# For  α = β and α, β > 1 the distribution is symetric about the mode of 0,5 and becomes sharper as α increases.
 beta_mode(5.0, 5.0)
 beta_mode(20.0, 20.0)
 beta_mode(50.0, 50.0)
@@ -114,58 +114,59 @@ beta_pdfs = [beta.pdf(x, 5.0, 5.0), beta.pdf(x, 20.0, 20.0), beta.pdf(x, 50.0, 5
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  1 < α < 2 and 0 < β < 2 - α no exterma exists for 0 < x < 1. The distribution is singular at x = 1.0.
+# For  1 < α < 2 and 0 < β < 2 - α no exterma exists for 0 < x < 1. The distribution has a singularity at x = 1.0.
 x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 1.5, 0.1), beta.pdf(x, 1.5, 0.25), beta.pdf(x, 1.5, 0.45)]
+beta_pdfs = [beta.pdf(x, 1.05, 0.75), beta.pdf(x, 1.05, 0.85), beta.pdf(x, 1.05, 0.9)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α < 1 and 1 < β < 2 - α no exterma exists for 0 < x < 1. The distribution is singular at x = 0.0.
+# For  α < 1 and 1 < β < 2 - α no exterma exists for 0 < x < 1. The distribution has a singularity at x = 0.0.
 x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 0.5, 1.0), beta.pdf(x, 0.5, 1.25), beta.pdf(x, 0.5, 1.45)]
+beta_pdfs = [beta.pdf(x, 0.9, 1.025), beta.pdf(x, 0.9, 1.05), beta.pdf(x, 0.9, 1.075)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α < 1 and β > 2 no exterma exists for 0 < x < 1. The distribution is singular at x = 0.0.
+# For  α < 1 and β > 2 no exterma exists for 0 < x < 1. The distribution has a singularity at x = 0.0.
 x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 0.5, 5.0), beta.pdf(x, 0.5, 10.0), beta.pdf(x, 0.5, 20.0)]
+beta_pdfs = [beta.pdf(x, 0.9, 3.0), beta.pdf(x, 0.9, 4.0), beta.pdf(x, 0.9, 5.0)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α > 1 and β < 1 no exterma exists for 0 < x < 1. The distribution is singular at x = 1.0.
+# For  α > 1 and β < 1 no exterma exists for 0 < x < 1. The distribution has a singularity at x = 1.0.
 x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 10.0, 0.5), beta.pdf(x, 20.0, 0.5)]
+beta_pdfs = [beta.pdf(x, 5.0, 0.95), beta.pdf(x, 10.0, 0.95), beta.pdf(x, 20.0, 0.95)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α < 1 and β < 1 the mode is a minimm or antimode. The distribution is singular at x = 1.0 and x = 0.0.
-beta_mode(0.5, 0.1)
-beta_mode(0.5, 0.5)
-beta_mode(0.5, 0.9)
+# For  α < 1 and β < 1 the mode is a minimm or antimode. The distribution has a singularities at x = 1.0 and x = 0.0.
+beta_mode(0.95, 0.8)
+beta_mode(0.95, 0.85)
+beta_mode(0.95, 0.9)
 x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 0.5, 0.1), beta.pdf(x, 0.5, 0.5), beta.pdf(x, 0.5, 0.9)]
+beta_pdfs = [beta.pdf(x, 0.95, 0.8), beta.pdf(x, 0.95, 0.85), beta.pdf(x, 0.95, 0.9)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 
 # %%
-# For  α >> β and β < 1 no exterma exists for 0 < x < 1. The distribution is singular at x = 1.0.
+# For  α >> β and β < 1 no exterma exists for 0 < x < 1. The distribution has a singularity at x = 1.0.
 x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 20.0, 0.5), beta.pdf(x, 50.0, 0.5)]
+beta_pdfs = [beta.pdf(x, 5.0, 0.95), beta.pdf(x, 20.0, 0.95), beta.pdf(x, 50.0, 0.95)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%
-# For  α = β and α, β < 1 the mode approaches 1. The distribution is singular at x = 1.0 and x = 0.0.
-beta_mode(0.05, 0.05)
-beta_mode(0.1, 0.1)
-beta_mode(0.5, 0.5)
-beta_μ(0.05, 0.05)
-beta_μ(0.1, 0.1)
-beta_μ(0.5, 0.5)
+# For  α = β and α, β < 1 the mode is a minimum or animode with value 0.5. The distribution is symetric about the  mode
+# and has a singularities at x = 1.0 and x = 0.0. σ → 0.5 as α → 0.
+beta_mode(0.85, 0.85)
+beta_mode(0.9, 0.9)
+beta_mode(0.95, 0.95)
+beta_μ(0.85, 0.85)
+beta_μ(0.9, 0.9)
+beta_μ(0.95, 0.95)
+beta_σ(0.9, 0.9)
 beta_σ(0.05, 0.05)
-beta_σ(0.1, 0.1)
-beta_σ(0.5, 0.5)
+beta_σ(0.01, 0.01)
 x = numpy.linspace(0.0, 1.0, 1000)
-beta_pdfs = [beta.pdf(x, 0.05, 0.05), beta.pdf(x, 0.1, 0.1), beta.pdf(x, 0.5, 0.5)]
+beta_pdfs = [beta.pdf(x, 0.85, 0.85), beta.pdf(x, 0.9, 0.9), beta.pdf(x, 0.95, 0.95)]
 stats_plots.multi_line_pdf_plot(x, beta_pdfs)
 
 # %%

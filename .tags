@@ -27,16 +27,16 @@ beta_	notebooks/beta_distibution_notebook.py	/^def beta_μ(α, β):$/;"	f
 beta_	notebooks/beta_distibution_notebook.py	/^def beta_σ(α, β):$/;"	f
 beta_cdfs	notebooks/beta_distibution_notebook.py	/^beta_cdfs = [beta.cdf(x, 0.5, 0.5), beta.cdf(x, 1.0, 1.0), beta.cdf(x, 2.0, 2.0), beta.cdf(x, 8.0, 8.0),$/;"	v
 beta_mode	notebooks/beta_distibution_notebook.py	/^def beta_mode(α, β):$/;"	f
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.05, 0.05), beta.pdf(x, 0.1, 0.1), beta.pdf(x, 0.5, 0.5)]$/;"	v
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.5, 0.1), beta.pdf(x, 0.5, 0.5), beta.pdf(x, 0.5, 0.9)]$/;"	v
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.5, 1.0), beta.pdf(x, 0.5, 1.25), beta.pdf(x, 0.5, 1.45)]$/;"	v
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.5, 5.0), beta.pdf(x, 0.5, 10.0), beta.pdf(x, 0.5, 20.0)]$/;"	v
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 1.5, 0.1), beta.pdf(x, 1.5, 0.25), beta.pdf(x, 1.5, 0.45)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.85, 0.85), beta.pdf(x, 0.9, 0.9), beta.pdf(x, 0.95, 0.95)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.9, 1.025), beta.pdf(x, 0.9, 1.05), beta.pdf(x, 0.9, 1.075)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.9, 3.0), beta.pdf(x, 0.9, 4.0), beta.pdf(x, 0.9, 5.0)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 0.95, 0.8), beta.pdf(x, 0.95, 0.85), beta.pdf(x, 0.95, 0.9)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 1.05, 0.75), beta.pdf(x, 1.05, 0.85), beta.pdf(x, 1.05, 0.9)]$/;"	v
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 1.5, 5.0), beta.pdf(x, 1.5, 20.0), beta.pdf(x, 1.5, 50.0)]$/;"	v
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 4.0, 4.0), beta.pdf(x, 8.0, 4.0)]$/;"	v
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 2.0, 4.0), beta.pdf(x, 40.0, 80.0), beta.pdf(x, 400.0, 800.0)]$/;"	v
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 10.0, 0.5), beta.pdf(x, 20.0, 0.5)]$/;"	v
-beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 0.5), beta.pdf(x, 20.0, 0.5), beta.pdf(x, 50.0, 0.5)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 0.95), beta.pdf(x, 10.0, 0.95), beta.pdf(x, 20.0, 0.95)]$/;"	v
+beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 0.95), beta.pdf(x, 20.0, 0.95), beta.pdf(x, 50.0, 0.95)]$/;"	v
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 1.5), beta.pdf(x, 20.0, 1.5), beta.pdf(x, 50.0, 1.5)]$/;"	v
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 5.0), beta.pdf(x, 20.0, 20.0), beta.pdf(x, 50.0, 50.0)]$/;"	v
 beta_posterior	notebooks/beta_distibution_notebook.py	/^def beta_posterior(success_count, n, x, α, β):$/;"	f
@@ -47,10 +47,15 @@ cdf_plot	examples/stats_plots.py	/^def cdf_plot(x, y):$/;"	f
 correlation_diagonal_matrix_heat_map	examples/seaborn_plots.py	/^def correlation_diagonal_matrix_heat_map():$/;"	f
 correlation_matrix_heat_map	examples/seaborn_plots.py	/^def correlation_matrix_heat_map():$/;"	f
 d	notebooks/linear_algebra_notebook.py	/^d = numpy.linspace(-2, 2, 5)$/;"	v
+data_frame	notebooks/pandas_notebook.py	/^data_frame = pandas.DataFrame(numpy.random.randn(6,4), index=dates, columns=list('ABCD'))$/;"	v
+data_simulate	notebooks/data_simulate_notebook.py	/^from examples import data_simulate$/;"	i
+dates	notebooks/pandas_notebook.py	/^dates = pandas.date_range('20130101', periods=6, freq='D')$/;"	v
+days	notebooks/pandas_notebook.py	/^days = data_frame.index$/;"	v
 dist_plot	examples/stats_plots.py	/^def dist_plot(samples):$/;"	f
 distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
 fit_dist_plot	examples/stats_plots.py	/^def fit_dist_plot(samples, stats):$/;"	f
+gaussian_spectrum	examples/data_simulate.py	/^def gaussian_spectrum(peaks, widths, amplitudes, x):$/;"	f
 histogram	examples/simple_plots.py	/^def histogram():$/;"	f
 histogram	examples/stats_plots.py	/^def histogram(samples, bins=None):$/;"	f
 horizontal_bar_plot	examples/seaborn_plots.py	/^def horizontal_bar_plot():$/;"	f
@@ -71,18 +76,22 @@ na	notebooks/a_b_test_notebook.py	/^na = 1000$/;"	v
 nb	notebooks/a_b_test_notebook.py	/^nb = 1500$/;"	v
 nb	notebooks/a_b_test_notebook.py	/^nb = 2000$/;"	v
 norm	examples/bernoulli_trials.py	/^from scipy.stats import norm$/;"	i
+norm	examples/data_simulate.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/a_b_test_notebook.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/bernoulli_trail_notebook.py	/^from scipy.stats import norm$/;"	i
 norm	notebooks/normal_distribution_notebook.py	/^from scipy.stats import norm$/;"	i
 norm_rvs	notebooks/normal_distribution_notebook.py	/^norm_rvs = norm.rvs(size=1000)$/;"	v
 ns	notebooks/beta_distibution_notebook.py	/^ns = [10, 100, 1000, 10000]$/;"	v
 numpy	examples/bernoulli_trials.py	/^import numpy$/;"	i
+numpy	examples/data_simulate.py	/^import numpy$/;"	i
 numpy	examples/seaborn_plots.py	/^import numpy$/;"	i
 numpy	notebooks/a_b_test_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/bernoulli_trail_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/beta_distibution_notebook.py	/^%aimport numpy$/;"	i
+numpy	notebooks/data_simulate_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/linear_algebra_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/normal_distribution_notebook.py	/^%aimport numpy$/;"	i
+numpy	notebooks/pandas_notebook.py	/^import numpy$/;"	i
 outlier_probability	notebooks/bernoulli_trail_notebook.py	/^outlier_probability = len(outliers) \/ len(trials)$/;"	v
 outliers	notebooks/bernoulli_trail_notebook.py	/^outliers = bernoulli_trials.success_count_trial_outliers(0.95, trials, p, n)$/;"	v
 p	notebooks/bernoulli_trail_notebook.py	/^p = 0.45$/;"	v
@@ -91,6 +100,7 @@ p	notebooks/beta_distibution_notebook.py	/^p = 0.35$/;"	v
 p	notebooks/beta_distibution_notebook.py	/^p = 0.5$/;"	v
 pa	notebooks/a_b_test_notebook.py	/^pa = 0.45$/;"	v
 pandas	examples/seaborn_plots.py	/^import pandas$/;"	i
+pandas	notebooks/pandas_notebook.py	/^import pandas$/;"	i
 params_binomal_to_normal	examples/bernoulli_trials.py	/^def params_binomal_to_normal(p, n):$/;"	f
 params_estimate_probability	examples/bernoulli_trials.py	/^def params_estimate_probability(success_count, n):$/;"	f
 pb	notebooks/a_b_test_notebook.py	/^pb = 0.5$/;"	v
@@ -102,6 +112,7 @@ pvalue	examples/bernoulli_trials.py	/^def pvalue(observed_success_count, μ, σ)
 pyplot	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 pyplot	examples/simple_plots.py	/^from matplotlib import pyplot$/;"	i
 pyplot	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
+pyplot	notebooks/pandas_notebook.py	/^from matplotlib import pyplot$/;"	i
 r	notebooks/linear_algebra_notebook.py	/^r = numpy.outer(a, b)$/;"	v
 residual_plot	examples/seaborn_plots.py	/^def residual_plot():$/;"	f
 scatter_plot	examples/simple_plots.py	/^def scatter_plot():$/;"	f
@@ -111,11 +122,14 @@ scatter_plot_matrix	examples/seaborn_plots.py	/^def scatter_plot_matrix():$/;"	f
 seaborn	examples/seaborn_plots.py	/^import seaborn$/;"	i
 seaborn	examples/stats_plots.py	/^import seaborn$/;"	i
 seaborn_plots	notebooks/seaborn_plots_notebook.py	/^from examples import seaborn_plots$/;"	i
+series	notebooks/pandas_notebook.py	/^series = pandas.Series([1, 3, 5, numpy.nan, 8, 8])$/;"	v
 simple_plots	notebooks/simple_plots_notebook.py	/^from examples import simple_plots$/;"	i
+spectrum	notebooks/data_simulate_notebook.py	/^spectrum = data_simulate.gaussian_spectrum([20.0, 60.0], [10.0, 5.0], [10.0, 20.0], x)$/;"	v
 stats	examples/stats_plots.py	/^from scipy import stats$/;"	i
 stats_plots	notebooks/a_b_test_notebook.py	/^from examples import stats_plots$/;"	i
 stats_plots	notebooks/bernoulli_trail_notebook.py	/^from examples import stats_plots$/;"	i
 stats_plots	notebooks/beta_distibution_notebook.py	/^from examples import stats_plots$/;"	i
+stats_plots	notebooks/data_simulate_notebook.py	/^from examples import stats_plots$/;"	i
 stats_plots	notebooks/normal_distribution_notebook.py	/^from examples import stats_plots$/;"	i
 success_count_trial	examples/bernoulli_trials.py	/^def success_count_trial(p, n):$/;"	f
 success_count_trial_a	notebooks/a_b_test_notebook.py	/^success_count_trial_a = bernoulli_trials.success_count_trial(pa, na)$/;"	v
@@ -125,6 +139,7 @@ success_count_trials	examples/bernoulli_trials.py	/^def success_count_trials(nex
 success_counts	notebooks/beta_distibution_notebook.py	/^success_counts = [bernoulli_trials.success_count_trial(p, n) for n in ns]$/;"	v
 test_stat	notebooks/a_b_test_notebook.py	/^test_stat = a_b_test_statistic(μa, σa, μb, σb)$/;"	v
 time_series_bootstrap_resampling	examples/seaborn_plots.py	/^def time_series_bootstrap_resampling():$/;"	f
+time_series_plot	examples/stats_plots.py	/^def time_series_plot(x, y):$/;"	f
 timeseries_plot	examples/seaborn_plots.py	/^def timeseries_plot():$/;"	f
 trails	notebooks/bernoulli_trail_notebook.py	/^trails = bernoulli_trials.success_count_trials(1000, p, n)$/;"	v
 trials	notebooks/bernoulli_trail_notebook.py	/^trials = bernoulli_trials.success_count_trials(1000, p, n)$/;"	v
@@ -132,5 +147,6 @@ uniform	examples/bernoulli_trials.py	/^from scipy.stats import uniform$/;"	i
 uniform	notebooks/bernoulli_trail_notebook.py	/^from scipy.stats import uniform$/;"	i
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 100)$/;"	v
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 1000)$/;"	v
+x	notebooks/data_simulate_notebook.py	/^x = numpy.linspace(0.0, 100.0, 100)$/;"	v
 x	notebooks/linear_algebra_notebook.py	/^x = numpy.array(['a', 'b', 'c'], dtype=object)$/;"	v
 x	notebooks/normal_distribution_notebook.py	/^x = numpy.linspace(norm.ppf(0.01), norm.ppf(0.99), 100)$/;"	v
