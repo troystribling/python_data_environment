@@ -40,6 +40,7 @@ beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0,
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 1.5), beta.pdf(x, 20.0, 1.5), beta.pdf(x, 50.0, 1.5)]$/;"	v
 beta_pdfs	notebooks/beta_distibution_notebook.py	/^beta_pdfs = [beta.pdf(x, 5.0, 5.0), beta.pdf(x, 20.0, 20.0), beta.pdf(x, 50.0, 50.0)]$/;"	v
 beta_posterior	notebooks/beta_distibution_notebook.py	/^def beta_posterior(success_count, n, x, α, β):$/;"	f
+binom	notebooks/bayesian_inference_notebook.py	/^from scipy.stats import binom$/;"	i
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
 category_scatter_plot	examples/seaborn_plots.py	/^def category_scatter_plot():$/;"	f
@@ -86,6 +87,7 @@ numpy	examples/bernoulli_trials.py	/^import numpy$/;"	i
 numpy	examples/data_simulate.py	/^import numpy$/;"	i
 numpy	examples/seaborn_plots.py	/^import numpy$/;"	i
 numpy	notebooks/a_b_test_notebook.py	/^import numpy$/;"	i
+numpy	notebooks/bayesian_inference_notebook.py	/^%aimport numpy$/;"	i
 numpy	notebooks/bernoulli_trail_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/beta_distibution_notebook.py	/^%aimport numpy$/;"	i
 numpy	notebooks/data_simulate_notebook.py	/^import numpy$/;"	i
@@ -94,6 +96,7 @@ numpy	notebooks/normal_distribution_notebook.py	/^%aimport numpy$/;"	i
 numpy	notebooks/pandas_notebook.py	/^import numpy$/;"	i
 outlier_probability	notebooks/bernoulli_trail_notebook.py	/^outlier_probability = len(outliers) \/ len(trials)$/;"	v
 outliers	notebooks/bernoulli_trail_notebook.py	/^outliers = bernoulli_trials.success_count_trial_outliers(0.95, trials, p, n)$/;"	v
+p	notebooks/bayesian_inference_notebook.py	/^p = binom.pmf(10.0, 200.0, x)$/;"	v
 p	notebooks/bernoulli_trail_notebook.py	/^p = 0.45$/;"	v
 p	notebooks/bernoulli_trail_notebook.py	/^p = 0.5$/;"	v
 p	notebooks/beta_distibution_notebook.py	/^p = 0.35$/;"	v
@@ -127,6 +130,7 @@ simple_plots	notebooks/simple_plots_notebook.py	/^from examples import simple_pl
 spectrum	notebooks/data_simulate_notebook.py	/^spectrum = data_simulate.gaussian_spectrum([20.0, 60.0], [10.0, 5.0], [10.0, 20.0], x)$/;"	v
 stats	examples/stats_plots.py	/^from scipy import stats$/;"	i
 stats_plots	notebooks/a_b_test_notebook.py	/^from examples import stats_plots$/;"	i
+stats_plots	notebooks/bayesian_inference_notebook.py	/^from examples import stats_plots$/;"	i
 stats_plots	notebooks/bernoulli_trail_notebook.py	/^from examples import stats_plots$/;"	i
 stats_plots	notebooks/beta_distibution_notebook.py	/^from examples import stats_plots$/;"	i
 stats_plots	notebooks/data_simulate_notebook.py	/^from examples import stats_plots$/;"	i
@@ -145,6 +149,7 @@ trails	notebooks/bernoulli_trail_notebook.py	/^trails = bernoulli_trials.success
 trials	notebooks/bernoulli_trail_notebook.py	/^trials = bernoulli_trials.success_count_trials(1000, p, n)$/;"	v
 uniform	examples/bernoulli_trials.py	/^from scipy.stats import uniform$/;"	i
 uniform	notebooks/bernoulli_trail_notebook.py	/^from scipy.stats import uniform$/;"	i
+x	notebooks/bayesian_inference_notebook.py	/^x = numpy.linspace(0.0, 1.0, 100)$/;"	v
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 100)$/;"	v
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 1000)$/;"	v
 x	notebooks/data_simulate_notebook.py	/^x = numpy.linspace(0.0, 100.0, 100)$/;"	v

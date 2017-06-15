@@ -59,4 +59,4 @@ data_frame.iloc[:,0]
 data_frame.iloc[:, 1:3]
 
 # Access data in data_frame using iloc by rows
-data_frame[1:3]
+data_frame.iloc[1:3]
