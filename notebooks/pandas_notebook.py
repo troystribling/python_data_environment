@@ -5,6 +5,8 @@
 
 import numpy
 import pandas
+import seaborn
+
 from matplotlib import pyplot
 
 # %%
@@ -60,3 +62,20 @@ data_frame.iloc[:, 1:3]
 
 # Access data in data_frame using iloc by rows
 data_frame.iloc[1:3]
+
+# %%
+# Read data from a csv parse the Date column to a Date object and make it an index
+fr_biking_data_frame = pandas.read_csv('data/fr_bikers.csv', parse_dates=['Date'], dayfirst=True, index_col='Date')
+
+# List first 3 columns
+fr_biking_data_frame.iloc[:3]
+
+fr_biking_data_frame.columns
+
+fr_biking_data_frame['Berri1'][:3]
+
+# %%
+fr_biking_data_frame['Berri1'].plot()
+
+#%%
+fr_biking_data_frame.plot(figsize=(15, 10))
