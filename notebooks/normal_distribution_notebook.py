@@ -6,7 +6,6 @@
 %aimport numpy
 
 from scipy.stats import norm
-
 from examples import stats_plots
 
 # %%

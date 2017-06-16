@@ -43,20 +43,21 @@ beta_posterior	notebooks/beta_distibution_notebook.py	/^def beta_posterior(succe
 binom	notebooks/bayesian_inference_notebook.py	/^from scipy.stats import binom$/;"	i
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
+ca_biking_data_frame	notebooks/pandas_data_notebook.py	/^ca_biking_data_frame = pandas.read_csv('data\/ca_bikers.csv', parse_dates=['Date'], dayfirst=True, index_col='Date')$/;"	v
 category_scatter_plot	examples/seaborn_plots.py	/^def category_scatter_plot():$/;"	f
 cdf_plot	examples/stats_plots.py	/^def cdf_plot(x, y):$/;"	f
+complaints	notebooks/pandas_data_notebook.py	/^complaints = pandas.read_csv('large_data\/311_Service_Requests_from_2011.csv')$/;"	v
 correlation_diagonal_matrix_heat_map	examples/seaborn_plots.py	/^def correlation_diagonal_matrix_heat_map():$/;"	f
 correlation_matrix_heat_map	examples/seaborn_plots.py	/^def correlation_matrix_heat_map():$/;"	f
 d	notebooks/linear_algebra_notebook.py	/^d = numpy.linspace(-2, 2, 5)$/;"	v
-data_frame	notebooks/pandas_notebook.py	/^data_frame = pandas.DataFrame(numpy.random.randn(6,4), index=dates, columns=list('ABCD'))$/;"	v
+data_frame	notebooks/pandas_basics_notebook.py	/^data_frame = pandas.DataFrame(numpy.random.randn(6,4), index=dates, columns=list('ABCD'))$/;"	v
 data_simulate	notebooks/data_simulate_notebook.py	/^from examples import data_simulate$/;"	i
-dates	notebooks/pandas_notebook.py	/^dates = pandas.date_range('20130101', periods=6, freq='D')$/;"	v
-days	notebooks/pandas_notebook.py	/^days = data_frame.index$/;"	v
+dates	notebooks/pandas_basics_notebook.py	/^dates = pandas.date_range('20130101', periods=6, freq='D')$/;"	v
+days	notebooks/pandas_basics_notebook.py	/^days = data_frame.index$/;"	v
 dist_plot	examples/stats_plots.py	/^def dist_plot(samples):$/;"	f
 distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
 fit_dist_plot	examples/stats_plots.py	/^def fit_dist_plot(samples, stats):$/;"	f
-fr_biking_data_frame	notebooks/pandas_notebook.py	/^fr_biking_data_frame = pandas.read_csv('data\/fr_bikers.csv', parse_dates=['Date'], dayfirst=True, index_col='Date')$/;"	v
 gaussian_spectrum	examples/data_simulate.py	/^def gaussian_spectrum(peaks, widths, amplitudes, x):$/;"	f
 histogram	examples/simple_plots.py	/^def histogram():$/;"	f
 histogram	examples/stats_plots.py	/^def histogram(samples, bins=None):$/;"	f
@@ -94,7 +95,8 @@ numpy	notebooks/beta_distibution_notebook.py	/^%aimport numpy$/;"	i
 numpy	notebooks/data_simulate_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/linear_algebra_notebook.py	/^import numpy$/;"	i
 numpy	notebooks/normal_distribution_notebook.py	/^%aimport numpy$/;"	i
-numpy	notebooks/pandas_notebook.py	/^import numpy$/;"	i
+numpy	notebooks/pandas_basics_notebook.py	/^%aimport numpy$/;"	i
+numpy	notebooks/pandas_data_notebook.py	/^%aimport numpy$/;"	i
 outlier_probability	notebooks/bernoulli_trail_notebook.py	/^outlier_probability = len(outliers) \/ len(trials)$/;"	v
 outliers	notebooks/bernoulli_trail_notebook.py	/^outliers = bernoulli_trials.success_count_trial_outliers(0.95, trials, p, n)$/;"	v
 p	notebooks/bayesian_inference_notebook.py	/^p = binom.pmf(10.0, 200.0, x)$/;"	v
@@ -104,7 +106,8 @@ p	notebooks/beta_distibution_notebook.py	/^p = 0.35$/;"	v
 p	notebooks/beta_distibution_notebook.py	/^p = 0.5$/;"	v
 pa	notebooks/a_b_test_notebook.py	/^pa = 0.45$/;"	v
 pandas	examples/seaborn_plots.py	/^import pandas$/;"	i
-pandas	notebooks/pandas_notebook.py	/^import pandas$/;"	i
+pandas	notebooks/pandas_basics_notebook.py	/^%aimport pandas$/;"	i
+pandas	notebooks/pandas_data_notebook.py	/^%aimport pandas$/;"	i
 params_binomal_to_normal	examples/bernoulli_trials.py	/^def params_binomal_to_normal(p, n):$/;"	f
 params_estimate_probability	examples/bernoulli_trials.py	/^def params_estimate_probability(success_count, n):$/;"	f
 pb	notebooks/a_b_test_notebook.py	/^pb = 0.5$/;"	v
@@ -116,7 +119,8 @@ pvalue	examples/bernoulli_trials.py	/^def pvalue(observed_success_count, μ, σ)
 pyplot	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 pyplot	examples/simple_plots.py	/^from matplotlib import pyplot$/;"	i
 pyplot	examples/stats_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
-pyplot	notebooks/pandas_notebook.py	/^from matplotlib import pyplot$/;"	i
+pyplot	notebooks/pandas_basics_notebook.py	/^from matplotlib import pyplot$/;"	i
+pyplot	notebooks/pandas_data_notebook.py	/^from matplotlib import pyplot$/;"	i
 r	notebooks/linear_algebra_notebook.py	/^r = numpy.outer(a, b)$/;"	v
 residual_plot	examples/seaborn_plots.py	/^def residual_plot():$/;"	f
 scatter_plot	examples/simple_plots.py	/^def scatter_plot():$/;"	f
@@ -125,8 +129,10 @@ scatter_plot_marginal_ticks	examples/seaborn_plots.py	/^def scatter_plot_margina
 scatter_plot_matrix	examples/seaborn_plots.py	/^def scatter_plot_matrix():$/;"	f
 seaborn	examples/seaborn_plots.py	/^import seaborn$/;"	i
 seaborn	examples/stats_plots.py	/^import seaborn$/;"	i
+seaborn	notebooks/pandas_basics_notebook.py	/^%aimport seaborn$/;"	i
+seaborn	notebooks/pandas_data_notebook.py	/^%aimport seaborn$/;"	i
 seaborn_plots	notebooks/seaborn_plots_notebook.py	/^from examples import seaborn_plots$/;"	i
-series	notebooks/pandas_notebook.py	/^series = pandas.Series([1, 3, 5, numpy.nan, 8, 8])$/;"	v
+series	notebooks/pandas_basics_notebook.py	/^series = pandas.Series([1, 3, 5, numpy.nan, 8, 8])$/;"	v
 simple_plots	notebooks/simple_plots_notebook.py	/^from examples import simple_plots$/;"	i
 spectrum	notebooks/data_simulate_notebook.py	/^spectrum = data_simulate.gaussian_spectrum([20.0, 60.0], [10.0, 5.0], [10.0, 20.0], x)$/;"	v
 stats	examples/stats_plots.py	/^from scipy import stats$/;"	i
