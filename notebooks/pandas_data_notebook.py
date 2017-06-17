@@ -21,14 +21,16 @@ ca_biking.columns
 ca_biking['Berri1'][:3]
 
 # %%
-ca_biking['Berri1'].plot()
+berri_bikes = ca_biking[['Berri1']].copy()
+berri_bikes.plot()
 
 # %%
 ca_biking.plot(figsize=(10, 6))
 
 # %%
 # Aggregating data
-berri_bikes = ca_biking[['Berri1']]
+# Add a weekday columnn and do weekday sums
+berri_bikes['weekday'] = berri_bikes.index.weekday
 
-# Add a weekday columnn
-berri_bikes.iloc[berri_bikes['week_day']] = berri_bikes.index.weekday
+weekday_counts = berri_bikes.groupby('weekday').aggregate(sum)
+weekday_counts.plot(kind='bar')

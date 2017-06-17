@@ -63,3 +63,10 @@ data_frame.iloc[:, 1:3]
 
 # Access data in data_frame using iloc by rows
 data_frame.iloc[1:3]
+
+# Access data in data_frame using loc and date lables
+data_frame.loc['2013-01-02':'2013-01-04']
+
+data_frame.loc['2013-01-02':'2013-01-04', 'A']
+
+data_frame.loc['2013-01-02':'2013-01-04', ['A', 'D']]

@@ -9,7 +9,7 @@ from scipy.stats import beta
 from examples import stats_plots
 
 # %%
-# Consider a coin wit probability of throwing heads h. After n tosses with r heads the posterior
+# Consider a coin with probability of throwing heads h. If h is unknown after n tosses with r heads the posterior
 # probability of h determined from Bayes is Beta(r + 1, n - r + 1)
 def coin_flip_posterior(h, n, r):
     return beta.pdf(h, n + 1, n - r + 1)
