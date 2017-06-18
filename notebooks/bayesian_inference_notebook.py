@@ -15,4 +15,9 @@ def coin_flip_posterior(h, n, r):
     return beta.pdf(h, n + 1, n - r + 1)
 
 h = numpy.linspace(0.0, 1.0, 100)
+
+# %%
 stats_plots.pdf_plot(h, coin_flip_posterior(h, 500, 100))
+
+# %%
+stats_plots.pdf_plot(h, coin_flip_posterior(h, 500, 400))
