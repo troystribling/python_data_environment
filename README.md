@@ -36,6 +36,7 @@ xcode-select --install
 
 ```
 pyenv virtualenv 3.5.2 data
+pyenv local 3.5.2
 ```
 
 ## Activate Virtual Environment
