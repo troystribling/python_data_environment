@@ -21,7 +21,7 @@ source .zshrc
 ## Install python
 
 ```
-pyenv install 3.5.2
+pyenv install 3.6.1
 ```
 
 ## Install Xcode Command Line Tools
@@ -35,8 +35,8 @@ xcode-select --install
 ## Create Virtual Environment in Project Directory
 
 ```
-pyenv virtualenv 3.5.2 data
-pyenv local 3.5.2
+pyenv virtualenv 3.6.1 data
+pyenv local 3.6.1
 ```
 
 ## Activate Virtual Environment
