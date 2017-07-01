@@ -5,6 +5,11 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 Counter	examples/simple_plots.py	/^from collections import Counter$/;"	i
+Pizza	notebooks/python_basics_notebook.py	/^class Pizza(object):$/;"	c
+Protocol	examples/wamp.py	/^from twisted.internet.protocol import Protocol$/;"	i
+__call__	notebooks/python_basics_notebook.py	/^    def __call__(self, topping):$/;"	m	class:Pizza	file:
+__init__	notebooks/python_basics_notebook.py	/^    def __init__(self):$/;"	m	class:Pizza
+__repr__	notebooks/python_basics_notebook.py	/^    def __repr__(self):$/;"	m	class:Pizza	file:
 a	notebooks/linear_algebra_notebook.py	/^a = [[1+1j, 2j],$/;"	v
 a	notebooks/linear_algebra_notebook.py	/^a = [[1, 0],$/;"	v
 a	notebooks/linear_algebra_notebook.py	/^a = numpy.arange(10)$/;"	v
@@ -12,6 +17,9 @@ a	notebooks/linear_algebra_notebook.py	/^a = numpy.arange(3*4*5*6).reshape((3,4,
 a	notebooks/linear_algebra_notebook.py	/^a = numpy.array([1 + 2j, 2 + 3j])$/;"	v
 a	notebooks/linear_algebra_notebook.py	/^a = numpy.ones((5,))$/;"	v
 a_b_test_statistic	notebooks/a_b_test_notebook.py	/^def a_b_test_statistic(μa, σa, μb, σb):$/;"	f
+a_function	notebooks/python_basics_notebook.py	/^def a_function():$/;"	f
+another_decorator	notebooks/python_basics_notebook.py	/^def another_decorator(f):$/;"	f
+another_function	notebooks/python_basics_notebook.py	/^def another_function():$/;"	f
 ascii_uppercase	examples/seaborn_plots.py	/^from string import ascii_uppercase$/;"	i
 b	notebooks/linear_algebra_notebook.py	/^b = [1, 2]$/;"	v
 b	notebooks/linear_algebra_notebook.py	/^b = [[2+4j, 1j],$/;"	v
@@ -45,8 +53,10 @@ beta_posterior	notebooks/beta_distibution_notebook.py	/^def beta_posterior(succe
 bivariate_kde_plot	examples/seaborn_plots.py	/^def bivariate_kde_plot():$/;"	f
 c	notebooks/linear_algebra_notebook.py	/^c = 1j*numpy.ones((5,))$/;"	v
 ca_biking	notebooks/pandas_data_notebook.py	/^ca_biking = pandas.read_csv('data\/ca_bikers.csv', parse_dates=['Date'], dayfirst=True, index_col='Date')$/;"	v
+call_foo	notebooks/python_basics_notebook.py	/^def call_foo(foofoo, arg):$/;"	f
 category_scatter_plot	examples/seaborn_plots.py	/^def category_scatter_plot():$/;"	f
 cdf_plot	examples/stats_plots.py	/^def cdf_plot(x, y):$/;"	f
+cheese	notebooks/python_basics_notebook.py	/^def cheese():$/;"	f
 coin_flip_posterior	notebooks/bayesian_inference_notebook.py	/^def coin_flip_posterior(h, n, r):$/;"	f
 complaint_counts	notebooks/pandas_large_data_notebook.py	/^complaint_counts = complaints['Complaint Type'].value_counts()$/;"	v
 complaints	notebooks/pandas_large_data_notebook.py	/^complaints = pandas.read_csv('large_data\/311_Service_Requests_from_2011.csv')$/;"	v
@@ -57,10 +67,13 @@ data_frame	notebooks/pandas_basics_notebook.py	/^data_frame = pandas.DataFrame(n
 data_simulate	notebooks/data_simulate_notebook.py	/^from examples import data_simulate$/;"	i
 dates	notebooks/pandas_basics_notebook.py	/^dates = pandas.date_range('20130101', periods=6, freq='D')$/;"	v
 days	notebooks/pandas_basics_notebook.py	/^days = data_frame.index$/;"	v
+decorated	notebooks/python_basics_notebook.py	/^decorated = my_decorator(a_function)$/;"	v
 dist_plot	examples/stats_plots.py	/^def dist_plot(samples):$/;"	f
 distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
+first	notebooks/python_basics_notebook.py	/^    def first():$/;"	f	function:parent
 fit_dist_plot	examples/stats_plots.py	/^def fit_dist_plot(samples, stats):$/;"	f
+foo	notebooks/python_basics_notebook.py	/^def foo(bar):$/;"	f
 gaussian_spectrum	examples/data_simulate.py	/^def gaussian_spectrum(peaks, widths, amplitudes, x):$/;"	f
 h	notebooks/bayesian_inference_notebook.py	/^h = numpy.linspace(0.0, 1.0, 100)$/;"	v
 histogram	examples/simple_plots.py	/^def histogram():$/;"	f
@@ -78,6 +91,7 @@ multi_line_cdf_plot	examples/stats_plots.py	/^def multi_line_cdf_plot(x, ys):$/;
 multi_line_pdf_plot	examples/stats_plots.py	/^def multi_line_pdf_plot(x, ys):$/;"	f
 multiple_line_charts	examples/simple_plots.py	/^def multiple_line_charts():$/;"	f
 multiple_linear_regression_plot	examples/seaborn_plots.py	/^def multiple_linear_regression_plot():$/;"	f
+my_decorator	notebooks/python_basics_notebook.py	/^def my_decorator(some_function):$/;"	f
 n	notebooks/bernoulli_trail_notebook.py	/^n = 1000$/;"	v
 na	notebooks/a_b_test_notebook.py	/^na = 1000$/;"	v
 nb	notebooks/a_b_test_notebook.py	/^nb = 1500$/;"	v
@@ -115,9 +129,11 @@ pandas	notebooks/pandas_data_notebook.py	/^%aimport pandas$/;"	i
 pandas	notebooks/pandas_large_data_notebook.py	/^%aimport pandas$/;"	i
 params_binomal_to_normal	examples/bernoulli_trials.py	/^def params_binomal_to_normal(p, n):$/;"	f
 params_estimate_probability	examples/bernoulli_trials.py	/^def params_estimate_probability(success_count, n):$/;"	f
+parent	notebooks/python_basics_notebook.py	/^def parent(num):$/;"	f
 pb	notebooks/a_b_test_notebook.py	/^pb = 0.5$/;"	v
 pdf_plot	examples/stats_plots.py	/^def pdf_plot(x, y):$/;"	f
 pie_chart	examples/simple_plots.py	/^def pie_chart():$/;"	f
+pizza	notebooks/python_basics_notebook.py	/^pizza = Pizza()$/;"	v
 polar_plot	examples/seaborn_plots.py	/^def polar_plot():$/;"	f
 posterior_distributions	notebooks/beta_distibution_notebook.py	/^posterior_distributions = [beta_posterior(success_counts[i], ns[i], x, 1.0, 1.0) for i in range(len(ns))]$/;"	v
 pvalue	examples/bernoulli_trials.py	/^def pvalue(observed_success_count, μ, σ):$/;"	f
@@ -129,6 +145,7 @@ pyplot	notebooks/pandas_data_notebook.py	/^from matplotlib import pyplot$/;"	i
 pyplot	notebooks/pandas_large_data_notebook.py	/^from matplotlib import pyplot$/;"	i
 r	notebooks/linear_algebra_notebook.py	/^r = numpy.outer(a, b)$/;"	v
 residual_plot	examples/seaborn_plots.py	/^def residual_plot():$/;"	f
+sauce	notebooks/python_basics_notebook.py	/^def sauce():$/;"	f
 scatter_plot	examples/simple_plots.py	/^def scatter_plot():$/;"	f
 scatter_plot_axes	examples/simple_plots.py	/^def scatter_plot_axes(equal_axes=False):$/;"	f
 scatter_plot_marginal_ticks	examples/seaborn_plots.py	/^def scatter_plot_marginal_ticks():$/;"	f
@@ -139,8 +156,10 @@ seaborn	notebooks/pandas_basics_notebook.py	/^%aimport seaborn$/;"	i
 seaborn	notebooks/pandas_data_notebook.py	/^%aimport seaborn$/;"	i
 seaborn	notebooks/pandas_large_data_notebook.py	/^%aimport seaborn$/;"	i
 seaborn_plots	notebooks/seaborn_plots_notebook.py	/^from examples import seaborn_plots$/;"	i
+second	notebooks/python_basics_notebook.py	/^    def second():$/;"	f	function:parent
 series	notebooks/pandas_basics_notebook.py	/^series = pandas.Series([1, 3, 5, numpy.nan, 8, 8])$/;"	v
 simple_plots	notebooks/simple_plots_notebook.py	/^from examples import simple_plots$/;"	i
+some_other_function	notebooks/python_basics_notebook.py	/^def some_other_function():$/;"	f
 spectrum	notebooks/data_simulate_notebook.py	/^spectrum = data_simulate.gaussian_spectrum([20.0, 60.0], [10.0, 5.0], [10.0, 20.0], x)$/;"	v
 stats	examples/stats_plots.py	/^from scipy import stats$/;"	i
 stats_plots	notebooks/a_b_test_notebook.py	/^from examples import stats_plots$/;"	i
@@ -164,6 +183,9 @@ trials	notebooks/bernoulli_trail_notebook.py	/^trials = bernoulli_trials.success
 uniform	examples/bernoulli_trials.py	/^from scipy.stats import uniform$/;"	i
 uniform	notebooks/bernoulli_trail_notebook.py	/^from scipy.stats import uniform$/;"	i
 weekday_counts	notebooks/pandas_data_notebook.py	/^weekday_counts = berri_bikes.groupby('weekday').aggregate(sum)$/;"	v
+wrapper	notebooks/python_basics_notebook.py	/^    def wrapper():$/;"	f	function:my_decorator
+wrapper	notebooks/python_basics_notebook.py	/^    def wrapper(*args, **kwargs):$/;"	f	function:another_decorator
+wraps	notebooks/python_basics_notebook.py	/^from functools import wraps$/;"	i
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 100)$/;"	v
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 1000)$/;"	v
 x	notebooks/data_simulate_notebook.py	/^x = numpy.linspace(0.0, 100.0, 100)$/;"	v
