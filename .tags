@@ -70,14 +70,20 @@ data_simulate	notebooks/data_simulate_notebook.py	/^from examples import data_si
 dates	notebooks/pandas_basics_notebook.py	/^dates = pandas.date_range('20130101', periods=6, freq='D')$/;"	v
 days	notebooks/pandas_basics_notebook.py	/^days = data_frame.index$/;"	v
 decorated	notebooks/python_basics_notebook.py	/^decorated = my_decorator(a_function)$/;"	v
-decorator	notebooks/python_basics_notebook.py	/^    def decorator(f):$/;"	f	function:deorator_with_args
-deorator_with_args	notebooks/python_basics_notebook.py	/^def deorator_with_args(arg):$/;"	f
+decorator	notebooks/python_basics_notebook.py	/^        def decorator(f):$/;"	f	function:Pizza.deliver
+decorator	notebooks/python_basics_notebook.py	/^    def decorator(f):$/;"	f	function:decorator_with_args
+decorator	notebooks/python_basics_notebook.py	/^    def decorator(f):$/;"	f	function:wraps_decorator_with_args
+decorator_with_args	notebooks/python_basics_notebook.py	/^def decorator_with_args(*outer_args):$/;"	f
+deliver	notebooks/python_basics_notebook.py	/^    def deliver(self, vendor):$/;"	m	class:Pizza
+delivered	notebooks/python_basics_notebook.py	/^def delivered(*args):$/;"	f
 dist_plot	examples/stats_plots.py	/^def dist_plot(samples):$/;"	f
 distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
 first	notebooks/python_basics_notebook.py	/^    def first():$/;"	f	function:parent
 fit_dist_plot	examples/stats_plots.py	/^def fit_dist_plot(samples, stats):$/;"	f
 foo	notebooks/python_basics_notebook.py	/^def foo(bar):$/;"	f
+foo_args	notebooks/python_basics_notebook.py	/^def foo_args(*args):$/;"	f
+foo_kwargs	notebooks/python_basics_notebook.py	/^def foo_kwargs(**kwargs):$/;"	f
 gaussian_spectrum	examples/data_simulate.py	/^def gaussian_spectrum(peaks, widths, amplitudes, x):$/;"	f
 h	notebooks/bayesian_inference_notebook.py	/^h = numpy.linspace(0.0, 1.0, 100)$/;"	v
 histogram	examples/simple_plots.py	/^def histogram():$/;"	f
@@ -140,6 +146,7 @@ pie_chart	examples/simple_plots.py	/^def pie_chart():$/;"	f
 pizza	notebooks/python_basics_notebook.py	/^pizza = Pizza()$/;"	v
 polar_plot	examples/seaborn_plots.py	/^def polar_plot():$/;"	f
 posterior_distributions	notebooks/beta_distibution_notebook.py	/^posterior_distributions = [beta_posterior(success_counts[i], ns[i], x, 1.0, 1.0) for i in range(len(ns))]$/;"	v
+process_args	notebooks/python_basics_notebook.py	/^def process_args(*args):$/;"	f
 pvalue	examples/bernoulli_trials.py	/^def pvalue(observed_success_count, μ, σ):$/;"	f
 pyplot	examples/seaborn_plots.py	/^import matplotlib.pyplot as pyplot$/;"	i
 pyplot	examples/simple_plots.py	/^from matplotlib import pyplot$/;"	i
@@ -188,9 +195,14 @@ trials	notebooks/bernoulli_trail_notebook.py	/^trials = bernoulli_trials.success
 uniform	examples/bernoulli_trials.py	/^from scipy.stats import uniform$/;"	i
 uniform	notebooks/bernoulli_trail_notebook.py	/^from scipy.stats import uniform$/;"	i
 weekday_counts	notebooks/pandas_data_notebook.py	/^weekday_counts = berri_bikes.groupby('weekday').aggregate(sum)$/;"	v
+wrapper	notebooks/python_basics_notebook.py	/^            def wrapper(*args):$/;"	f	function:Pizza.deliver.decorator
+wrapper	notebooks/python_basics_notebook.py	/^        def wrapper(*args):$/;"	f	function:decorator_with_args.decorator
+wrapper	notebooks/python_basics_notebook.py	/^        def wrapper(*args):$/;"	f	function:wraps_decorator_with_args.decorator
 wrapper	notebooks/python_basics_notebook.py	/^    def wrapper():$/;"	f	function:my_decorator
 wrapper	notebooks/python_basics_notebook.py	/^    def wrapper(*args):$/;"	f	function:another_decorator
 wraps	notebooks/python_basics_notebook.py	/^from functools import wraps$/;"	i
+wraps_decorator_with_args	notebooks/python_basics_notebook.py	/^def wraps_decorator_with_args(*outer_args):$/;"	f
+wraps_process_args	notebooks/python_basics_notebook.py	/^def wraps_process_args(*args):$/;"	f
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 100)$/;"	v
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 1000)$/;"	v
 x	notebooks/data_simulate_notebook.py	/^x = numpy.linspace(0.0, 100.0, 100)$/;"	v
