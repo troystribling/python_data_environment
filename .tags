@@ -7,8 +7,10 @@
 Counter	examples/simple_plots.py	/^from collections import Counter$/;"	i
 Pizza	notebooks/python_basics_notebook.py	/^class Pizza(object):$/;"	c
 Protocol	examples/wamp.py	/^from twisted.internet.protocol import Protocol$/;"	i
+Thing	notebooks/python_basics_notebook.py	/^class Thing(object):$/;"	c
 __call__	notebooks/python_basics_notebook.py	/^    def __call__(self, topping):$/;"	m	class:Pizza	file:
 __init__	notebooks/python_basics_notebook.py	/^    def __init__(self):$/;"	m	class:Pizza
+__init__	notebooks/python_basics_notebook.py	/^    def __init__(self, value):$/;"	m	class:Thing
 __repr__	notebooks/python_basics_notebook.py	/^    def __repr__(self):$/;"	m	class:Pizza	file:
 a	notebooks/linear_algebra_notebook.py	/^a = [[1+1j, 2j],$/;"	v
 a	notebooks/linear_algebra_notebook.py	/^a = [[1, 0],$/;"	v
@@ -68,6 +70,8 @@ data_simulate	notebooks/data_simulate_notebook.py	/^from examples import data_si
 dates	notebooks/pandas_basics_notebook.py	/^dates = pandas.date_range('20130101', periods=6, freq='D')$/;"	v
 days	notebooks/pandas_basics_notebook.py	/^days = data_frame.index$/;"	v
 decorated	notebooks/python_basics_notebook.py	/^decorated = my_decorator(a_function)$/;"	v
+decorator	notebooks/python_basics_notebook.py	/^    def decorator(f):$/;"	f	function:deorator_with_args
+deorator_with_args	notebooks/python_basics_notebook.py	/^def deorator_with_args(arg):$/;"	f
 dist_plot	examples/stats_plots.py	/^def dist_plot(samples):$/;"	f
 distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
@@ -91,7 +95,7 @@ multi_line_cdf_plot	examples/stats_plots.py	/^def multi_line_cdf_plot(x, ys):$/;
 multi_line_pdf_plot	examples/stats_plots.py	/^def multi_line_pdf_plot(x, ys):$/;"	f
 multiple_line_charts	examples/simple_plots.py	/^def multiple_line_charts():$/;"	f
 multiple_linear_regression_plot	examples/seaborn_plots.py	/^def multiple_linear_regression_plot():$/;"	f
-my_decorator	notebooks/python_basics_notebook.py	/^def my_decorator(some_function):$/;"	f
+my_decorator	notebooks/python_basics_notebook.py	/^def my_decorator(f):$/;"	f
 n	notebooks/bernoulli_trail_notebook.py	/^n = 1000$/;"	v
 na	notebooks/a_b_test_notebook.py	/^na = 1000$/;"	v
 nb	notebooks/a_b_test_notebook.py	/^nb = 1500$/;"	v
@@ -175,6 +179,7 @@ success_count_trial_outliers	examples/bernoulli_trials.py	/^def success_count_tr
 success_count_trials	examples/bernoulli_trials.py	/^def success_count_trials(nexp, p, n):$/;"	f
 success_counts	notebooks/beta_distibution_notebook.py	/^success_counts = [bernoulli_trials.success_count_trial(p, n) for n in ns]$/;"	v
 test_stat	notebooks/a_b_test_notebook.py	/^test_stat = a_b_test_statistic(μa, σa, μb, σb)$/;"	v
+thing	notebooks/python_basics_notebook.py	/^thing = Thing(5)$/;"	v
 time_series_bootstrap_resampling	examples/seaborn_plots.py	/^def time_series_bootstrap_resampling():$/;"	f
 time_series_plot	examples/stats_plots.py	/^def time_series_plot(x, y):$/;"	f
 timeseries_plot	examples/seaborn_plots.py	/^def timeseries_plot():$/;"	f
@@ -184,7 +189,7 @@ uniform	examples/bernoulli_trials.py	/^from scipy.stats import uniform$/;"	i
 uniform	notebooks/bernoulli_trail_notebook.py	/^from scipy.stats import uniform$/;"	i
 weekday_counts	notebooks/pandas_data_notebook.py	/^weekday_counts = berri_bikes.groupby('weekday').aggregate(sum)$/;"	v
 wrapper	notebooks/python_basics_notebook.py	/^    def wrapper():$/;"	f	function:my_decorator
-wrapper	notebooks/python_basics_notebook.py	/^    def wrapper(*args, **kwargs):$/;"	f	function:another_decorator
+wrapper	notebooks/python_basics_notebook.py	/^    def wrapper(*args):$/;"	f	function:another_decorator
 wraps	notebooks/python_basics_notebook.py	/^from functools import wraps$/;"	i
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 100)$/;"	v
 x	notebooks/beta_distibution_notebook.py	/^x = numpy.linspace(0.0, 1.0, 1000)$/;"	v

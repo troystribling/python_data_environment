@@ -18,7 +18,7 @@ bernoulli_trials.pvalue(500, μ, σ)
 trials = bernoulli_trials.success_count_trials(1000, p, n)
 outliers = bernoulli_trials.success_count_trial_outliers(0.95, trials, p, n)
 outlier_probability = len(outliers) / len(trials)
-stats_plots.fit_dist_plot(trails, norm)
+stats_plots.fit_dist_plot(trials, norm)
 
 # %%
 n = 1000

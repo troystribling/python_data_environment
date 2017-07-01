@@ -31,11 +31,11 @@ parent(10)()
 
 # %%
 # decorator pattern example
-def my_decorator(some_function):
+def my_decorator(f):
     def wrapper():
-        print("Before some function")
-        some_function()
-        print("After some function")
+        print("Before function")
+        f()
+        print("After function")
 
     return wrapper
 
@@ -55,9 +55,9 @@ another_function()
 # @wraps decorator example
 def another_decorator(f):
     @wraps(f)
-    def wrapper(*args, **kwargs):
+    def wrapper(*args):
         print("wrapper")
-        return f(*args, **kwargs)
+        return f(*args)
     return wrapper
 
 @another_decorator
@@ -65,6 +65,21 @@ def some_other_function():
     print("some_other_function")
 
 some_other_function()
+
+# %%
+# decorator with arguments
+def deorator_with_args(arg):
+    def decorator(f):
+        print("arg: %(arg)" % locals())
+        
+# %%
+# class example
+class Thing(object):
+    def __init__(self, value):
+        self.value = value
+
+thing = Thing(5)
+thing.value
 
 # %%
 # simple class decorator
