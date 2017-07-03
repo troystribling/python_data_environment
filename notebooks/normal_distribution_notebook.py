@@ -66,4 +66,4 @@ norm_rvs = norm.rvs(size=1000)
 stats_plots.dist_plot(norm_rvs)
 
 # %%
-stats_plots.normal_fit_plot(norm_rvs)
+stats_plots.fit_dist_plot(norm_rvs, norm)
