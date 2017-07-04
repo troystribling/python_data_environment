@@ -1,5 +1,6 @@
 # %%
 from functools import wraps
+from functools import partial
 
 # %%
 # functions as objects
@@ -157,3 +158,11 @@ def delivered(*args):
     print(f"delivered: {args}")
 
 delivered(10, 3)
+
+# %%
+# partial function evaluation
+def myFunction(a, b, c):
+    return a + b + c
+
+partialFunction = partial(myFunction, 7, 8)
+partialFunction(4)
