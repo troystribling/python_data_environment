@@ -23,13 +23,6 @@ async def get_reddit_top(subreddit, client):
         print(f"{score}: {title} ({link})")
     print(f"DONE {subreddit}\n")
 
-def signal_handler(signal, frame):
-    print("Recieved exit")
-    loop.stop()
-    sys.exit(0)
-
-signal.signal(signal.SIGINT, signal_handler)
-
 loop.run_until_complete(asyncio.gather(get_reddit_top('python', client),
                                        get_reddit_top('programming', client),
                                        get_reddit_top('compsci', client)))
