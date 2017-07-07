@@ -1,9 +1,7 @@
-import signal
-import sys
 import asyncio
 import aiohttp
 import json
-
+ 
 loop = asyncio.get_event_loop()
 client = aiohttp.ClientSession(loop=loop)
 

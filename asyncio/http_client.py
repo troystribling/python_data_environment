@@ -10,7 +10,7 @@ async def fetch_page(session, url):
 loop = asyncio.get_event_loop()
 
 with aiohttp.ClientSession(loop=loop) as session:
-    content = loop.run_until_complete(fetch_page(session, 'http://python.org'))
+    content = loop.run_until_complete(fetch_page(session, 'https://poloniex.com/public?command=return24hVolume'))
     print(content)
 
 loop.close()

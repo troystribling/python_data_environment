@@ -23,6 +23,8 @@ a	notebooks/linear_algebra_notebook.py	/^a = numpy.ones((5,))$/;"	v
 a_b_test_statistic	notebooks/a_b_test_notebook.py	/^def a_b_test_statistic(μa, σa, μb, σb):$/;"	f
 a_function	notebooks/python_basics_notebook.py	/^def a_function():$/;"	f
 aiohttp	asyncio/http_client.py	/^import aiohttp$/;"	i
+aiohttp	asyncio/periodic_client.py	/^import aiohttp$/;"	i
+aiohttp	asyncio/periodic_client_2.py	/^import aiohttp$/;"	i
 aiohttp	asyncio/reddit.py	/^import aiohttp$/;"	i
 another_decorator	notebooks/python_basics_notebook.py	/^def another_decorator(f):$/;"	f
 another_function	notebooks/python_basics_notebook.py	/^def another_function():$/;"	f
@@ -30,6 +32,8 @@ ascii_uppercase	examples/seaborn_plots.py	/^from string import ascii_uppercase$/
 asyncio	asyncio/hello_clock.py	/^import asyncio$/;"	i
 asyncio	asyncio/hello_world.py	/^import asyncio$/;"	i
 asyncio	asyncio/http_client.py	/^import asyncio$/;"	i
+asyncio	asyncio/periodic_client.py	/^import asyncio$/;"	i
+asyncio	asyncio/periodic_client_2.py	/^import asyncio$/;"	i
 asyncio	asyncio/reddit.py	/^import asyncio$/;"	i
 asyncio	asyncio/thread_pool.py	/^import asyncio$/;"	i
 b	notebooks/linear_algebra_notebook.py	/^b = [1, 2]$/;"	v
@@ -74,6 +78,7 @@ complaint_counts	notebooks/pandas_large_data_notebook.py	/^complaint_counts = co
 complaints	notebooks/pandas_large_data_notebook.py	/^complaints = pandas.read_csv('large_data\/311_Service_Requests_from_2011.csv')$/;"	v
 correlation_diagonal_matrix_heat_map	examples/seaborn_plots.py	/^def correlation_diagonal_matrix_heat_map():$/;"	f
 correlation_matrix_heat_map	examples/seaborn_plots.py	/^def correlation_matrix_heat_map():$/;"	f
+currency_pair	asyncio/periodic_client_2.py	/^currency_pair = 'BTC_ETH'$/;"	v
 d	notebooks/linear_algebra_notebook.py	/^d = numpy.linspace(-2, 2, 5)$/;"	v
 data_frame	notebooks/pandas_basics_notebook.py	/^data_frame = pandas.DataFrame(numpy.random.randn(6,4), index=dates, columns=list('ABCD'))$/;"	v
 data_simulate	notebooks/data_simulate_notebook.py	/^from examples import data_simulate$/;"	i
@@ -91,6 +96,8 @@ distribution_plot	examples/seaborn_plots.py	/^def distribution_plot():$/;"	f
 faceted_logistic_regression_plot	examples/seaborn_plots.py	/^def faceted_logistic_regression_plot():$/;"	f
 feed	asyncio/thread_pool.py	/^async def feed():$/;"	f
 fetch_page	asyncio/http_client.py	/^async def fetch_page(session, url):$/;"	f
+fetch_page	asyncio/periodic_client.py	/^async def fetch_page():$/;"	f
+fetch_page	asyncio/periodic_client_2.py	/^async def fetch_page(url):$/;"	f
 first	notebooks/python_basics_notebook.py	/^    def first():$/;"	f	function:parent
 fit_dist_plot	examples/stats_plots.py	/^def fit_dist_plot(samples, stats):$/;"	f
 foo	notebooks/python_basics_notebook.py	/^def foo(bar):$/;"	f
@@ -112,6 +119,8 @@ linera_regression_marginal_distributions_plot	examples/seaborn_plots.py	/^def li
 loop	asyncio/hello_clock.py	/^loop = asyncio.get_event_loop()$/;"	v
 loop	asyncio/hello_world.py	/^loop = asyncio.get_event_loop()$/;"	v
 loop	asyncio/http_client.py	/^loop = asyncio.get_event_loop()$/;"	v
+loop	asyncio/periodic_client.py	/^loop = asyncio.get_event_loop()$/;"	v
+loop	asyncio/periodic_client_2.py	/^loop = asyncio.get_event_loop()$/;"	v
 loop	asyncio/reddit.py	/^loop = asyncio.get_event_loop()$/;"	v
 loop	asyncio/thread_pool.py	/^loop = asyncio.get_event_loop()$/;"	v
 marginal_distribution_plot	examples/seaborn_plots.py	/^def marginal_distribution_plot():$/;"	f
@@ -168,6 +177,9 @@ pdf_plot	examples/stats_plots.py	/^def pdf_plot(x, y):$/;"	f
 pie_chart	examples/simple_plots.py	/^def pie_chart():$/;"	f
 pizza	notebooks/python_basics_notebook.py	/^pizza = Pizza()$/;"	v
 polar_plot	examples/seaborn_plots.py	/^def polar_plot():$/;"	f
+poll	asyncio/periodic_client.py	/^async def poll():$/;"	f
+poll	asyncio/periodic_client_2.py	/^async def poll():$/;"	f
+poll_interval	asyncio/periodic_client_2.py	/^poll_interval = 30.0$/;"	v
 posterior_distributions	notebooks/beta_distibution_notebook.py	/^posterior_distributions = [beta_posterior(success_counts[i], ns[i], x, 1.0, 1.0) for i in range(len(ns))]$/;"	v
 print_every_minute	asyncio/hello_clock.py	/^async def print_every_minute():$/;"	f
 print_every_second	asyncio/hello_clock.py	/^async def print_every_second():$/;"	f
@@ -196,7 +208,8 @@ seaborn	notebooks/pandas_large_data_notebook.py	/^%aimport seaborn$/;"	i
 seaborn_plots	notebooks/seaborn_plots_notebook.py	/^from examples import seaborn_plots$/;"	i
 second	notebooks/python_basics_notebook.py	/^    def second():$/;"	f	function:parent
 series	notebooks/pandas_basics_notebook.py	/^series = pandas.Series([1, 3, 5, numpy.nan, 8, 8])$/;"	v
-signal	asyncio/reddit.py	/^import signal$/;"	i
+session	asyncio/periodic_client.py	/^session = aiohttp.ClientSession(loop=loop)$/;"	v
+session	asyncio/periodic_client_2.py	/^session = aiohttp.ClientSession(loop=loop)$/;"	v
 simple_plots	notebooks/simple_plots_notebook.py	/^from examples import simple_plots$/;"	i
 some_other_function	notebooks/python_basics_notebook.py	/^def some_other_function():$/;"	f
 spectrum	notebooks/data_simulate_notebook.py	/^spectrum = data_simulate.gaussian_spectrum([20.0, 60.0], [10.0, 5.0], [10.0, 20.0], x)$/;"	v
@@ -213,11 +226,11 @@ success_count_trial_b	notebooks/a_b_test_notebook.py	/^success_count_trial_b = b
 success_count_trial_outliers	examples/bernoulli_trials.py	/^def success_count_trial_outliers(alpha, trials, p, n):$/;"	f
 success_count_trials	examples/bernoulli_trials.py	/^def success_count_trials(nexp, p, n):$/;"	f
 success_counts	notebooks/beta_distibution_notebook.py	/^success_counts = [bernoulli_trials.success_count_trial(p, n) for n in ns]$/;"	v
-sys	asyncio/reddit.py	/^import sys$/;"	i
 test_stat	notebooks/a_b_test_notebook.py	/^test_stat = a_b_test_statistic(μa, σa, μb, σb)$/;"	v
 thing	notebooks/python_basics_notebook.py	/^thing = Thing(5)$/;"	v
 thread_pool	asyncio/thread_pool.py	/^thread_pool = ThreadPoolExecutor(max_workers=20)$/;"	v
 threading	asyncio/thread_pool.py	/^import threading$/;"	i
+time	asyncio/periodic_client_2.py	/^from time import time$/;"	i
 time	asyncio/thread_pool.py	/^import time$/;"	i
 time_series_bootstrap_resampling	examples/seaborn_plots.py	/^def time_series_bootstrap_resampling():$/;"	f
 time_series_plot	examples/stats_plots.py	/^def time_series_plot(x, y):$/;"	f
