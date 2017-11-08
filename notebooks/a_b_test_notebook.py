@@ -20,7 +20,8 @@ def a_b_test_statistic(μa, σa, μb, σb):
 
 # %%
 # Run an A/B Bernoului Trial test with pa = pb
-pa = pb = 0.5
+pa = 0.5
+pb = pa
 na = 1000
 nb = 2000
 success_count_trial_a = bernoulli_trials.success_count_trial(pa, na)
