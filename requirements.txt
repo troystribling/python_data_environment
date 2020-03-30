@@ -2,7 +2,7 @@ appnope==0.1.0
 attrs==17.2.0
 autobahn==17.6.2
 Automat==0.6.0
-bleach==2.0.0
+bleach==3.1.4
 boto==2.47.0
 bz2file==0.98
 certifi==2017.4.17
